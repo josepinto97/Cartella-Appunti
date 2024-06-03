@@ -1,0 +1,87 @@
+CDN: è una rete di server interconnessi che velocizza il caricamento di pagine web ad altro contenuto. Lo scopo principale 
+    è ridurre la latenza, sparpagliando le risorse tra i vari server per poi recuperarle quando va in cerca di altre 
+    iformazioni richieste dall' utente.
+    Alcuni server lo mettomno a diposizione gratis altri posso essere intergrati pagando una somma.
+
+Molto imporate capire ciò che vuole il cliente, facendoil sito sui suoi gusti più che sui nostri.    
+
+Esercizio: fare al cliente un intervista per capire i requisiti del sui sito internet:
+
+    V-non ha un logo, possiamo inserire noi un logo
+
+    -sezione per fare prenotazione per appuntamenti NO
+
+    V-sito per presentare l autofficina per mettere in mostra i servizi:
+        -manutenzione ordinarie
+        -revisione
+        -servizi di urgenza con carrattrezzi
+
+    V-pagina dedicata alla storia dell' autofficina
+
+    -non hanno tempo per gestire le richieste sul sito
+
+    V-via don bedetti 26 posizione dell' autofficina con unica sede
+
+    V-nome autofficina: ok car autofficina
+
+    X-colori particolari: arancione, nero 
+
+    V-fotografie fornite dal cliente
+
+    -approccio amichevole e affidabile, autofficina di quartiere
+
+    -listino prezzi fornito dal cliente? NO
+
+    X-testi non forniti
+
+    V-non si occupa di auto elettriche
+
+    V-promozioni per l' apertura e ulteriori
+        -il cliente ci contatta quando deve aggiungere nuove promozioni 
+
+    -perche un cliente dovrebbe preferire  te rispetto ad un altra autofficina? IMPORTANTE
+        -macchinari di ultima generazione
+        -molti clienti che conoscono il cliente perche proviene da un altra officina 
+        -importante scrivere il nome del proprietario
+
+    -unico dipendente uno stagista
+
+    -il cliente ha un budget? IMPORTANTE
+        -meno possibile
+
+    V-n° partita iva e dati dell' azienda
+
+    -serve la manutenzione del sito
+        -rinnovo dominio e certificazione
+
+    -non serve area riservata
+
+    -il cliente non ha un dominio
+        -se lo compriamo noi servono tutti i dati del cliente
+
+    -non servono ulteriori modifche al sito una volta completo
+        -nel caso il cliente ci contatta
+
+    -solo la lingua italiana
+
+    V-ti può interessare una sezione dedicata ai commenti dei clienti? IMPORTANTE
+        -si
+
+    V-vuoi apparire sulle mappe di google?
+        -...
+
+    -c' è un sito che ti piace e vuoi che mi ispiri a quello? IMPORTANTE
+
+    -se ci sono delle autofficine in zona che potrebbero farti concorrenza
+        -guardiamo sul sito per vedere cosa offrono e cosa no 
+
+    V-sponsor che vuoi mettere in evidenza
+        -azienda di ricambi da cui si rifornisce (nome e non logo, se si vule il logo bisogna farsi dare 
+            il consenso all' azienda)
+
+    V-privacy e coockies SEMPRE NECESSARI
+        -il cliente deve fornirti il testo della privacy oppure rivolgersi con il cliente ad una azienda abilitata
+
+    -data massima della consegna del lavoro al cliente
+
+Iubenda sito per gestire la parte di privacy.

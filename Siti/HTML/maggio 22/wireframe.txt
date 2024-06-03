@@ -1,0 +1,55 @@
+HEADER:
+
+    -logo
+
+    -menù di navigazione:
+        -home
+        -chi siamo
+        -dove trovarci
+
+    -div
+        -p (numero di telefono)
+
+MAIN:
+
+    -section
+        -h1: ok car autofficina:    
+        /br tipi di lavorazioni
+        -div (immagini)
+
+    -section
+        -article
+            -h2: revisioni
+            -p descrizione
+        -div
+            -immagini lavorazione
+
+    -section 
+        -article
+            -h2: manutenzione ordinaria
+            -p descrizione
+        -div    
+            -immagini lavorazione
+
+    -section
+        -article
+            -h2: servizio di urgenza
+            -p descrizione
+        -div immagini lavorazione
+        
+    -aside
+        -p (promozioni)
+
+FOOTER:
+
+    -div
+        -logo fornitore ricambi
+
+    -article 
+        -h3 nome autofficina
+        -p via, numero P.I
+        -nav
+            -ul
+                -li informaioni legali
+                -li privacy e polici
+

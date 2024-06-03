@@ -1,0 +1,4 @@
+Esistono altri contenitori oltre ad header, main e footer in cui si collocano elementi che non e corretto inserire nei precedenti contenitori. Quali <nav>, <section>, <article>,
+<aside>.
+
+Can i use: e un sito che serve per vedere su quali browser e supportato un tag di html.

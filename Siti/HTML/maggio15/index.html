@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elenchi</title>
+</head>
+
+<body>
+
+    <header>
+        <div>logo sito</div>
+        <h2>nome sito</h2>
+        <nav>menu sito</nav>
+    </header>
+
+    <main>
+        <h1>Pagina degli elenchi</h1>
+        <section>
+            <article>
+                <h2>elenco non ordinato:</h2>
+                <ul type="square"><!--type="" serve per dare ordini all' lemento, in questo caso che sia un quadrato.
+                                    va effettuato sul genitore degli elementi. Ed e meglio effettuarlo tramite css-->
+                    <li>home</li><!--sono gli item della lista, anche questo e un blocco-->
+                    <li>chi siamo</li>
+                </ul><!--sono le liste non ordinate che numerano tramite pallino i vari elementi, è un blocco-->
+            </article>
+            <article>
+                <h2>elenco ordinato:</h2>
+                <ol type="a" start="6"><!--questo type serve amodificare gli elementi della lista ordinata. Mentre start 
+                                        indica da quale numero deve iniziare la lista-->
+                    <li>home</li>
+                    <li>chi siamo</li>
+                </ol><!--sono le liste ordinate, >blocchi che numerano tramite numeri gli elementi.-->
+            </article>
+            <article>
+                <h2>elenco nidificato</h2>
+                <ul>
+                    <li>primo
+                        <ul>
+                            <li>primo.1</li>
+                            <li>secondo.1
+                                <ul>
+                                    <li>secondo.1.1</li>
+                                </ul>
+                            </li>
+                            <li>terzo.1</li>
+                        </ul>
+                    </li>
+                    <li>secondo
+                        <ul>
+                            <li>primo.2
+                                <ul>
+                                    <li>primo.2.1</li>
+                                </ul>
+                            </li>
+                            <li>secondo.2</li>
+                            <li>terzo.2</li>
+                        </ul>
+                    </li>
+                    <li>terzo
+                        <ul>
+                            <li>terzo.1</li>
+                            <li>terzo.2</li>
+                            <li>terzo.3
+                                <ul>
+                                    <li>terzo.3.1</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!--div*4 e una scorciatoia che serve a generare 4 tag del tipo div-->
+        <!--div>p serve a creare un tag con dentro un tag di tipo p, questo vale per tutto e ripetuto piu volte-->
+        <!--div*4>p serve per creare 4 div con dentro a ognuno di loro una tag di tipo p-->
+        <div>
+            <nav>contatti</nav>
+        </div>
+        <div>
+            <nav>informazioni</nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

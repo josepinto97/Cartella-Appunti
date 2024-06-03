@@ -1,0 +1,19 @@
+CSS: cascade style sheets, è il foglio di stile a cascata; chimata cosi perche modifica la sezione in cui è inserita.
+    
+Modalità di inserimento:
+
+    su foglio a parte: sull html si cita un indirizzo che cita la nosta pagina css (miglior emodalità)
+
+    inserire direttamente su html: scrivre il codice css direttamente sull' html (scelta peggiore, perchè diventa molto
+        confusionario).
+
+Se è un solo file è meglio tenerlo nella root principale, mentre se è il contrario è meglio creare una 
+    cartella, o più che contengano i file css.
+
+Il css va inserito nell' head.
+
+Ogni elemento ha un margine e un padding:
+
+    -Margine: è la distanza tra un blocco e l' altro.
+
+    -Padding: distanza degli elementi interni rispotto al loro box.

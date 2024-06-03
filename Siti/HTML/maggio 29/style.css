@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*questo codice serve per allineare tutti i blocchi, per levare i margini che mette in automatico,
+        * indica tutti gli elementi della pagina. Quando si utilizza il numero 0 non e necessaria un 
+        unità di misura. Questo resett va fatto sempre, cosi siamo in grado di gestire interamente
+        tutte le grandezze dei contenitori*/
+}
+
+header {
+    background-color: coral;
+}
+
+nav {
+    background-color: blueviolet;
+    width: 500px;
+    /*per dare la grandezza al contenitore basato sui pixel o percentuali*/
+}
+
+ul {
+    width: 300px;
+    background-color: beige;
+}
+
+ul li {
+    background-color: cornflowerblue;
+    width: 130px;
+}
+
+section {
+    background-color: cadetblue;
+}
+
+section article {
+    background-color: #cbcbcb;
+    width: 50%;
+    /*height: 200px;
+    /*meglio non usare le altezze per il testo*/
+    /*overflow: auto;
+    /*per nascondere contenuto che esce dalla grandezza della casella, hidden(meglio di no), scroll e auto*/
+}
+
+h1,
+h2,
+h3 {
+    color: blue;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    /*per centrare il testo*/
+    background-color: chartreuse;
+    /*per dare il colore al bakground*/
+}

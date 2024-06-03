@@ -1,0 +1,69 @@
+Gestione delle immagini implementate in una pagina web: per prima cosa bisogna stare attenti alle immagine
+    con copryright che sono soggette a pagamento. Esistono immagini in cui bisogna citare solo l' autore o 
+    immagini che sono totalmente gratuite per l' utilizzo.
+
+L' immagine è una griglia che contiene una serie di pixel, con una base e un' altezza (anche le immagine rotonde,
+    hanno una serie di pixel trasparenti). L' unità di misura delle immagine sono i pixel, più pixel sono
+    presenti in un immagine tanto più sarà migliore la qualità.
+    Ogni pixel contiene 3 canali: RGB (Red Green Blue), riescono a riprodurre tutti i colori. 
+
+DPI è un unità di misura. La risoluzione di un'immagine corrisponde al numero di pixel per pollice
+     che contiene   (1 pollice = 2,54 centimetri) indicata con il termine in DPI (punti per pollice).
+
+La pagina html non supporta tutte le estensioni di immagini:
+
+    -JPEG o JPG è leggero, compatibile con tutti quanti, e molto utilizzato. La differenza tra i due formati
+        è dovuta a una vecchia versione di microsoft che non leggeva più di 3 caratteri nelle estensione dei file.
+        E' un file che comprime, ovvero leva dati per allegerire, quindi si ha una perdita di pixel.
+        Con una palete di oltre un milione di colori.
+        Si utilizza principalmente per i social e per mandare una veloce preview ai clienti.
+        Questo tipo di file non supporta la trasparenza.
+
+    -TIFF o TIF non è rilevante per il web
+
+    -GIF è un formato compresso però senza perdita di dati. Con una palete di 256 colori, vuol dire che non è possibile 
+        creare delle sfumature.
+        Si utilizza con colorazioni piatte tipo per il Logo di un sito, o per una GIF animata.
+        Supporta la trasparenza con un metodo binario (o 0 o 1).
+
+    -PNG supporta il canale alfa ovvero quello per la trasparenza.
+        Si utilizza principalmente per immagine che richiedono uno sfondo trasparente.
+        Non comprime quinidi non è presente una perdita di dati.
+
+    -PSD è il file di origine di photoshop, non e rilevante per il web.
+
+    -RAW è il file che si chiama negativo digitale, le modifiche non vengono mai applicate su quel file viene creato 
+        un file su cui vanno applicate. Noe è rilevante per il web.
+
+    -WEBP è un formato recente (sviluppata da google), comprime sia con perdita di tadi che senza perdita di dati, 
+        supportala trasparenza e anche l' animazione dell' immagine.
+        Non tutti i browser la supportatono (sicuramente da chrome si percheè di proprietà 
+        di google), però i browser più diffusi la supportano.
+
+    -SVG il browser lo legge, non è una griglia con dei pixel ma va a coordinate vettoriali.
+        Si utilizza per i loghi e per le icone, ha un peso irrisorio e si addatta a tutte le dimensione impostate.
+        Il contenuto di queste immagini sono coordinate anche se vengono aperte con la visualizzazione
+        della sorgente. 
+
+I siti principali in cui reperire immagini libere sono, altre bisogna citare l' autore, bisogna fare attenzione
+    alle diciture e alle linee guida del sito:
+    
+    -pexels
+
+    -unsplash
+
+    -freepik
+
+    -pixabay
+
+Le immagini devono essere il più possibile leggere, poi dipende sempre dal caso.
+
+Photopea, applicazione gratis per modificare l' immagine: 
+
+    -immagine>dimensione immagine per vedere la dimensione dell' immagine e appunto
+        per modicarne le dimensioni
+
+    -file>esporta come per modificare ulteriormente l' immagine.
+
+    -proporzione fissa per stabilire direttamente la dimensine che voglioamo sull' immagine, 
+        per ritagliare l' immagine.

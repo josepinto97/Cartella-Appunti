@@ -1,0 +1,13 @@
+
+Elementi in blocco: tag che sono dei blocchi il cui testo occupa visivamente tutta la pagina. es: h1...h6, <p>,. Contengono il testo che noi vogliamo far visualizzare.
+		    Si alternano a elementi chiamati in line.
+Elementi in line: permettono di modificare delle porzioni di contenuto senza modificarne il flusso come invece fanno gli elementi in blocco. es: creare un link, mettere in 		  		  grassetto. Certi non modificano il contenuto semantico, altri invece si (ad esempio dare enfasi a una certa parola).
+
+Non e possibile inserire un elemento in blocco dentro un elemento in line, pero il contrario e possibile.
+
+Gli elementi in line che modificano la semantica sono utilizzati per garantire l accessibilita a tutte le categorie di persone (es. non vedenti, non udenti).
+
+Ogni browser ha un foglio di stile integrato, che gli permette di adattareil testo alla modificazione della pagaina internet o per la visualizzazione su un altro dispositivo.
+
+Il sito e composto da una serie di blocchi, ovvero contenitori in cui andiamo a inserire i paragrafi, immagini, logo, menu di navigazione, titoli ecc.
+Esistono dei contenitori che hanno una definizione semantica.

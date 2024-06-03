@@ -1,0 +1,83 @@
+										CICLO DI VITA DEL SOFTWARE
+
+Il ciclo di vita di un software descrive tutti i passaggi necessari a ideare, realizzare e mantenere in funzione un software.
+
+Un software (come qualsiasi prodotto) nasce quando si presenta l' idea o la necessità di crearlo, poi viene progettato, realizzato, verificato, distribuito e aggiornato.
+
+Ognuna di queste fasi ha costi e strumenti.
+
+TINEYE: sito che verifica se un' immagine e protetta da copriryght.
+BING: motore di ricerca che cataloga le immagini in base a dei filtri (libere da copriryght).
+IMAGECREATOR: ia che produce immagini.
+DESIGNER: ia per il brand kit.
+
+ANALISI: fase in cui si capisce la destinazione d' uso del prodotto, cosa deve fare il software. Gli analisti intervistano il committente per definire i bisogni da 
+	 soddisfare. Gli analisti devono avere competenze tecniche per capire se le richieste del committente sono realizzabili e codificarle per i progettisti, e competenze 	 	 	 umanistiche per dialogare con una o più persone e capirne le esigenze.
+	 L' analista deve conoscere e comprendere il funzionamento dei processi da implementare, per codificarlo in maniera precisa e dettagliata. Il risultato del lavoro
+	 e il DOCUMENTI DI SPECIFICHE FUNZIONALI, ovvero un documento che codifica tutte le caratteristiche che deve averre il softwae, in particolre:
+	 - dati di input (se previsti)
+	 - dati in output (quali dati e come presentarli)
+	 - flussi di trasformazione (come gli input diventano output)
+	 - target utenti
+	 Gli analisti utilizzano strumenti di raccolta dati (appunti) e presentazioni dei documenti (word processor).
+	 Il documento di specifiche funzionali deve essere sottoposto al committente per approvazione e serve a tutelare sia il committente, sia l' azienda che realizza
+	 il prodotto software.
+	 Il documento di analisi può contenere dei MOCKUP (anteprima del risultato) del prodotto, ossia delle immagini (eventualmente interattive) che presentano le interfacce.
+
+PROGETTAZIONE: con i dati raccolti dall' alisi si inizia la progettazione del progetto (fase con costi orari più alti). 
+	       Il team dei progettisti riceve il documento di specifiche funzionali e progetta la soluzione software.
+	       La progettazione è data da una scomposizione funzionale della soluzione. 
+	       I progetisti possono riutilizzare gli elemnti già sviluppati in passaato dall' azienda (plugin, temi, librerie, ...).
+	       I progettisti possono scomporre la soluzione sia per semplificare lo sviluppo sia per preparare elemnti che potranno essere riutilizzati in futuro.
+	       Per gestire il progetto si utilizzano strumenti grafici per gestire gli schemi, oppure strumenti tecnici specifici per la realizzazione dei progetti.
+	       
+
+IMPLEMENTAZIONE: si incomincia a scrivere il software. in questa fase si possono usare diversi sistemi di supporto:
+	-IDE (integradet developement environment)/editor: consentono di scrivere il codice sorgente e di gestire alcune altre funzionalità in un unico ambiente.
+
+	-Debugger (integrato negli IDE): consentono di semplificare la ricerca degli errori all' interno del codice.
+
+	-Controllo di versione: consente di tenere traccia dei vari stati di sviluppo di ogni file del progetto e di gestire la collaborazione all' interno
+		del team di implementazione.
+		Il controllo di versione è un sistema client/server: il server memorizza i dati mentre il client interagisce con l' utente.
+		Il controllo di versione costituisce una storia impermanente e incrementale degli stati dei file: l' utente deve indicare al controllo di versione (client)
+		quando salvare uno stato.
+		Il controllo di versione è basato su un protocollo (regole da seguire per la codifica dei file per il server/client), i protocolli più diffusi sono
+		GIT e SVN.
+		GIT HUB è un server di controllo di versione basato su protocollo GIT, offre piani gratuiti e a pagamento.
+		TORTOISE GIT è un client basato su  GIT, visual studio e visual studio code integrano un client GIT.
+		REPOSITORY: è un contenitore di dati all' interno di un server di controllo di versione, può contenere file e cartelle.
+		Il repository contiene tutta la storia di un file memorizzato al suo interno, anche le cancellazioni.
+		Il repository "vive" sul server, e può essere clonato sul computer degli sviluppatori tramite il client.
+		Alla fine della creazione di una repository viene rilasciato un indirizzo in web, ed è dove è situata la cartella del repository.
+		Il comando CLONE crea una copia locale del repository e la lascia collegata al server. La copia locale può essere sincronizzata dall' utente, in
+		qualsiasi momento, tramite apposti comandi.
+		GIT HUB utilizza un sistema di autenticazione asimmetrica: 
+			-per l' accesso interattivo (direttamente tramite sito) si utilizza username e password
+			-per l' accesso tramite client è necessario generare un token.
+		Il comando COMMIT pubblica le modifiche locali nel repository, in GIT il comando è diviso in commit e push:
+			-commit conferma le modifiche ai faile in locale (solo sul computer)
+			-push pubblica le modifiche sul repository
+		Il comando PULL scarica le modifiche del repository, riallineando la versione locale con i file presenti sul server.
+		Il comando REVERT riporta i file all' ultima commit effettuata (anche locale), consentendo di eliminare mosifiche sbagliate, anche se queste
+		riguardano molti file o cartelle.
+
+	-Continuous testing: è un sistema automatico che può essere utilizzato in alcuni casi, che consente di automatizzare i controlli di valdità del software.
+
+
+	-Protocilli di test: è un insieme di verifiche da effettuare su un prodotto software prima che questo superi il collaudo (quando i test sono tutti positivi).
+		Se uno o piu controlli previsti dal protocollo non vengono superati, si deve riportare l' errore al team di implementazione.
+
+	-Issue traking: consente di tenere traccia degli errori e dello stato di correzione dei medesimi. é un sistema client/server che centralizza la gestione 
+		delle comunicazioni relative agli errori e alle nuove funzionalità dei software.
+		Quando uno sviluppatore deve segnalare un errore o richiedere l' aggiunta di una funzionalità al software utilizza l' issue traker 
+
+	-IA, consente di supportare lo sviluppatore automatizzando parte della scrittura del codice.
+
+COLLAUDO: fase in cui si testa il software per assicurarsi il corretto funzionamento.
+
+DISTRIBUZIONE: distribuzione nel mercato, o al cliente del software.
+
+MANUTENZIONE: correzione degli errori e aggiornamento del software (fase più costosa dello sviluppo 75% dei costi), fase che dura fino al decadimento del software o al
+	      fine del termine del ciclo di vita.
+

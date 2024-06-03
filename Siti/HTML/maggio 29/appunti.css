@@ -1,0 +1,69 @@
+p {
+    color: red;
+    /* per fare un css serve il selettore (in questo caso è il p), la proprietà (in questo caso è il color),
+        e dopo ci va il valore (ovvero il colore in questo caso).*/
+}
+
+p {
+    color: green;
+    /*essendo un foglio di stile a CASCATA, in questo caso il precendente color viene sovrascritto dal successivo,
+        ovvero il color red viene sovrascritto da color green perchè è scritto precedentemente.*/
+}
+
+p {
+    color: #ffac66;
+    /*in questo caso si può utilizzare il colore esadecimale utilizzando il # ottenibile o dal cliente o riandado a
+        ottenerlo tramite photoshop o altre applicazio (photopea) in cue è possibile ottere il colore*/
+}
+
+p {
+    color: rgb(127, 31, 222);
+    /*in questo caso è possibile inserire il colore tramite la scala RGB, sempre ottenibile tramite applicazioni o 
+        direttamente dal cliente*/
+}
+
+div {
+    color: red;
+    /*in questo caso solo l' h2 che è dentro al div diventa di colore rosso perche dopo di lui c' è un p e noi abbiamo
+        già dato una proprietà al p*/
+}
+
+p {
+    color: green;
+    font-size: 20px;
+    /*cosi tutti i p modificano la loro grandezza perche la proprietà della grandezza e preente solo in un p, mentre per 
+        il colore visto che è presente in piu parti cambiare a secondo della loro appartenenza*/
+}
+
+span {
+    color: rgb(0, 60, 255);
+}
+
+h1 {
+    color: chocolate;
+}
+
+h1,
+h2,
+h3 {
+    color: darkgoldenrod;
+}
+
+h1 {
+    font-size: 60px;
+    /*per dare la grandezza al testo, px si intendono i pixel*/
+}
+
+h2 {
+    font-size: 40px;
+}
+
+section p {
+    color: red;
+    /*questo per dire di modicifare solo gli elementi dentro un determinato elemento: in questo caso deve modificare
+        solo i paragrafi dentro alle section*/
+}
+
+div p {
+    color: aqua;
+}

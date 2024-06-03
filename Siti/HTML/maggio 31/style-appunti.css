@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*allinea tutti gli elementi al centro*/
+}
+
+.logo {
+    margin-left: 50px;
+    margin-bottom: -4px;/*per levare lo spazio che separa il bottom del logo dalla fine del footer*/
+}
+
+ul {
+    background-color: blue;
+}
+
+ul li {
+    /*display: inline; serve per mettere tutta in una stelli line*/
+    display: inline-block;
+    /*serve per mostare come inline ma vengono trattati come blocchi*/
+    background-color: white;
+    margin: 10px;
+    /*padding: 10px 16px 10px 16px; cosi intende top right bottom left*/
+    /*padding: 10px 16px 10px; cosi intende top left right e bottom*/
+    padding: 10px 16px;
+    /*scritto cosi vuol dire che il primo valore è top bottom mentre il secondo è left right*/
+    border: 3px solid red;/*per dare i bordi ai box, la dicitura dopo per dare il colore*/
+    border-style: dotted;/*per dare lo style al bordo*/
+}
+
+main {
+    background-color: coral;
+    display: flex;
+    /*il flex serve per allineare gli elementi, va utilizzato sul genitore degli elementi che si vogliono allineare,
+    meglio non farlo sul main*/
+    gap: 50px;/*è lo spazio fra gli elementi figli del blocco*/
+    padding: 20px;
+    /*come il flex va applicato al genitore di chi si vuole influenzare, e serve per distanziare quegli elementi, e va 
+    applicato dove si trova il flex*/
+    /*justify-content: flex-end;serve per mandare alla fine del box i figli*/
+    /*justify-content: space-around;serve per distanziare lo spazio INTORNO agli elementi*/
+    /*justify-content: space-between;serve per distanziare lo spazio FRA gli elemtni ai lati*/
+    /*justify-content: space-evenly; spazia tutto alla stessa distanza*/
+    justify-content: center;
+    flex-wrap: wrap;
+    /*per far andare a capo gli elementi in base alla grandezza della pagina*/
+}
+
+section {
+    background-color: darksalmon;
+    /* display: none; elimina il target dal flusso della pagina*/
+    /* opacity: 0.3; serve per dare l opacità al box*/
+    padding: 20px;
+}
+
+/*a {
+    display: block; serve per mostrare un elemento inline come un blocco
+}*/
+
+.footer-elements {
+    /*.nome serve per creare una classe*/
+    background-color: brown;
+    padding: 20px;
+    font-size: 20px;
+    font-style: italic; /*per cambiare il carattere*/
+    font-weight: bold;/*è per il bold*/
+}
+
+/*  p{
+    text-decoration: none; per levare la sottolineatura del tag a, oppure anche altre scelte
+    line-height: 1; per cambiare l interlinea
+} */

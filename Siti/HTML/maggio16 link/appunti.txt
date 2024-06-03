@@ -1,0 +1,11 @@
+<span> è un elemento in line non semantico ovvero che non comunica nulla del contenuto al browser, serve
+per assegnare un certo significato che decidiamo noi.
+
+<div> anche lui e u elemento in blocco non semantico, che non comunica nulla.
+
+<article> questo tag indica che dovrebbe esserci la presenza di contenuto.
+<section> indica solamenente una sezione di qualcosa.
+
+LINK: <a></a> esistono due tipi di link: con percorsi relativi o percorsi assoluti.
+    assoluti: utilizzato per link che portano all' esterno del mio sito.
+    relativi: utilizzati per link che portano sempre all' interno del mio sito.
