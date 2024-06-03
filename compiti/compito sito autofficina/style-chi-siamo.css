@@ -3,8 +3,11 @@
     margin: 2px;
 }
 
+.descrizione-chi-siamo{
+    width: 80%;
+}
+
 .descrizione-chi-siamo p {
-    width: 60%;
     padding-left: 30px;
 }
 
