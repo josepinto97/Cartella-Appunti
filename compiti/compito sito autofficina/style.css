@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f3f5f4;
+}
+
+.intestazione-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sottolineatura-none {
+    text-decoration: none;
+    color: black;
+}
+
+.border-black {
+    border: solid black;
+    padding: 10px 20px;
+    width: 130px;
+}
+
+.bordo-header {
+    background-color: black;
+    height: 2px;
+    margin-top: -4px;
+}
+
+.contatti {
+    text-align: center;
+    line-height: 39px;
+    background-color: black;
+    padding-left: 2px;
+    margin-bottom: -1px;
+}
+
+.p-contatti {
+    background-color: #f3f5f4;
+    padding-left: 3px;
+}
+
+main {
+    padding: 80px;
+    background-image: url(immagini/bakground.webp);
+}
+
+.img-sfondo img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    word-spacing: 30px;
+}
+
+.contenitore-main {
+    border: solid black;
+}
+
+.conenitore-contenitore-main {
+    background-color: white;
+}
+
+.descrizione-lavorazioni {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lavorazione{
+    width: 95%;
+}
+
+.lavorazione h3 {
+    font-size: 45px;
+    text-align: center;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lavorazione div {
+    text-align: center;
+}
+
+.lavorazione p {
+    margin-bottom: 12px;
+    height: 75px;
+}
+
+.lavorazione {
+    padding: 3px;
+    margin: 3px;
+    border: solid black;
+}
+
+.bordo-lavorazione {
+    margin: 5px;
+}
+
+.immagine-promozionale img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+
+.bordo-footer {
+    background-color: black;
+    height: 2px;
+}
+
+footer {
+    background-color: #f3f5f4;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer section .footer-nav li {
+    border: solid black;
+    padding: 5PX;
+    margin: 10px;
+    list-style: none;
+}
+
+footer section ul li {
+    padding: 5PX;
+    margin: 10px;
+    list-style: none;
+}

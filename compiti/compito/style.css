@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+    color: chocolate;
+    font-size: 60px;
+}
+
+h2 {
+    background-color: coral;
+    width: 50%;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+section {
+    background-color: darkgoldenrod;
+    margin: 30px;
+    width: 50%;
+    padding-top: 0.1px;
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+section article {
+    background-color: blueviolet;
+    width: 50%;
+    padding: 20px;
+    margin: 30px;
+    background-color: rgb(222, 106, 106);
+}
+
+main {
+    background-color: darkkhaki;
+    padding: 20px;
+}
+
+article p{
+    background-color: rgb(132, 132, 216);
+}
