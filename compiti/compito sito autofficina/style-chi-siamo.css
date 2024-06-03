@@ -3,7 +3,7 @@
     margin: 2px;
 }
 
-.descrizione-chi-siamo{
+.descrizione-chi-siamo {
     width: 80%;
 }
 
@@ -19,6 +19,10 @@
 
 .descrizione-chi-siamo article img {
     margin-left: 30px;
+}
+
+.descrizione-chi-siamo img {
+    width: 40%;
 }
 
 .contenitore-section {
@@ -50,17 +54,17 @@
     display: flex;
 }
 
-.prenotazioni p{
+.prenotazioni p {
     font-size: 40px;
     text-align: center;
 }
 
-.campi{
+.campi {
     display: flex;
     justify-content: space-around;
 }
 
-.campi ul li{
+.campi ul li {
     list-style: none;
     font-size: 30px;
     border: solid black;
