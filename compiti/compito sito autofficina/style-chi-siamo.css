@@ -49,9 +49,11 @@
 }
 
 .pubblicita {
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.pubblicita img{
+    object-fit: cover;
+    width: 100%;
 }
 
 .prenotazioni p {
