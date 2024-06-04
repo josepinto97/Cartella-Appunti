@@ -1,0 +1,4 @@
+Font: 
+    -serif: sono gli spigoli nelle lettere, non è buono usarle sul web, potrebbero creacre problemi
+        su caratteri di piccole dimensioni.
+    -sans serif: caratteri senza spigolini.
