@@ -21,7 +21,6 @@ ul {
 }
 
 ul li {
-    /*display: inline; serve per mettere tutta in una stelli line*/
     display: inline-block;
     /*serve per mostare come inline ma vengono trattati come blocchi*/
     background-color: white;
@@ -50,6 +49,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     /*per far andare a capo gli elementi in base alla grandezza della pagina*/
+    /*queste proprietà sono applicate solo se è presente diplay:flex*/
 }
 
 section {
