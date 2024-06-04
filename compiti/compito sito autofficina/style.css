@@ -84,15 +84,16 @@ h1 {
 
 .descrizione-lavorazioni {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .lavorazione{
-    width: 95%;
+    width: 300px;
 }
 
 .lavorazione h3 {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     height: 130px;
     display: flex;
@@ -106,7 +107,7 @@ h1 {
 
 .lavorazione p {
     margin-bottom: 12px;
-    height: 75px;
+    height: 100px;
 }
 
 .lavorazione {

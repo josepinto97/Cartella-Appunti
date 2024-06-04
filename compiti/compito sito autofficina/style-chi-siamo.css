@@ -42,7 +42,6 @@
     margin: 5px;
     border: solid black;
     width: 45%;
-    justify-content: space-around;
 }
 
 .prenotazioni {
@@ -50,8 +49,9 @@
 }
 
 .pubblicita {
-    height: 50%;
+    height: 300px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .prenotazioni p {
@@ -68,11 +68,12 @@
     list-style: none;
     font-size: 30px;
     border: solid black;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    height: 60px;
-    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40%;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
