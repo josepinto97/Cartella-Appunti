@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*GENERICI*/
+
+.logo img {
+    width: 140px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sottolineatura-none {
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.home {
+    text-decoration: underline orange;
+}
+
+/*MAIN*/
+
+.sezione-benvenuto {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.sezione-benvenuto article {
+    padding: 20px;
+}
+
+.titoletto-uno {
+    width: 90%;
+}
+
+.sezione-benvenuto article h1 {
+    font-size: 70px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.sezione-benvenuto article p {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.contenitore-p-preventivo {
+    display: flex;
+    justify-content: left;
+}
+
+.pulsante-preventivo {
+    background-color: #f5af30;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
+.sezione-community {
+    background-color: #2d2d2d;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sezione-community h3 {
+    color: #f5af30;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.sezione-community p {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.sezione-benvenuto nav a {
+    color: black;
+    margin-top: 30px;
+
+}
+
+.contenitore-p-community {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.sezione-community div {
+    width: 30%;
+    display: inline-block;
+}
+
+.pulsante-community {
+    background-color: #f5af30;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: 900;
+}
+
+.sezione-posti {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.titoletto-due {
+    width: 65%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.contenitore-immagini {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-article {
+    margin-left: 30px;
+    width: 709px;
+    text-align: left;
+}
+
+.titoletto-due h2 {
+    font-size: 80px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.titoletto-due p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.img-article h4 {
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 20px;
+    font-weight: 900;
+}
+
+.img-article p {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.descrizione-volo {
+    background-color: #2d2d2d;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    display: flex;
+}
+
+.volo-paragrafi {
+    padding: 50px;
+}
+
+.volo-paragrafi h3 {
+    color: #f5af30;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.volo-article h5 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.volo-article p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.logo-sigla {
+    text-align: center;
+}
+
+.loghi-social {
+    display: flex;
+    gap: 20px;
+}

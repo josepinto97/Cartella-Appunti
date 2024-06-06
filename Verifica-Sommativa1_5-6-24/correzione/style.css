@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*quando si danno dei padding o margin loro vanno a recuperare dei pixel all' interno del box*/
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+/*MAIN*/
+
+.titoletto {
+    text-align: center;
+    width: 29%;
+    margin: auto;
+    /*auto aggiusta gli spazi in automatico*/
+    padding: 3%;
+}
+
+.titoletto h2 {
+    font-size: 30px;
+    
+}
+
+.p-immagini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+}
+
+.blocco-sinistra,
+.blocco-destra {
+    width: 564px;
+}
+
+.blocco-destra-p h4{
+    font-size: 28px;
+    padding-bottom: 20px;
+    line-height: 1.6; /*aumenta l' interlinea*/
+    text-decoration: underline;
+}
+
+.blocco-destra-p {
+    padding-top: 40px;
+    text-align: left;
+}
+
+.blocco-destra-p p{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
