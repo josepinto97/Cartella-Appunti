@@ -11,6 +11,8 @@ BING: motore di ricerca che cataloga le immagini in base a dei filtri (libere da
 IMAGECREATOR: ia che produce immagini.
 DESIGNER: ia per il brand kit.
 
+Linkedeen: importante.
+
 ANALISI: fase in cui si capisce la destinazione d' uso del prodotto, cosa deve fare il software. Gli analisti intervistano il committente per definire i bisogni da 
 	 soddisfare. Gli analisti devono avere competenze tecniche per capire se le richieste del committente sono realizzabili e codificarle per i progettisti, e competenze 	 	 	 umanistiche per dialogare con una o più persone e capirne le esigenze.
 	 L' analista deve conoscere e comprendere il funzionamento dei processi da implementare, per codificarlo in maniera precisa e dettagliata. Il risultato del lavoro
@@ -81,3 +83,71 @@ DISTRIBUZIONE: distribuzione nel mercato, o al cliente del software.
 MANUTENZIONE: correzione degli errori e aggiornamento del software (fase più costosa dello sviluppo 75% dei costi), fase che dura fino al decadimento del software o al
 	      fine del termine del ciclo di vita.
 
+COSTI DI SVILUPPO: quando si produce un software è importante capire quale prezzo proprorre al committente.
+	Esistono due approcci:
+		-1: apporccio basato sul valore: si valuta quanto il cliente è disposto a spendere per il programma/sito, si valuta se con quell' importo si riescono a pagare
+			le spese di sviluppo e ad avere un margine. Se il valore è inferiore al costo di sviluppo, non si può accetare il cliente.
+		-2: approccio basato sul costo: si valuta quanto tempo è necessario per la realizzazione dopodichè si moltiplica per il parametro per il costo oraio/giornaliero.
+			Se i tempi di sviluppo sono molti lunghi, tipicamente si appiattiscono i costi giornalieri/orari. (freelance 500 euro al giorno). 
+		NB: per quanto riguarda i siti, nei costi è bene considerare la produzione dei contenuti (testi,immagini,video...).
+
+L' analisi di un software è quel processo mediante il quale si stabilisce la destinazione d' uso del prodotto commissionato. Gli analisti devono essere in possesso di varie competenze:
+Tecniche: per capire se le richieste del cliente sono realizzabili e poi codificarle ai progettisti.
+Umanistiche: per poter dialogare in modo efficiente e capire le esigenze del cliente.
+Gli analisti sottopongono una serie di domande (questionario) al committente, anche in più occasioni, per dedurre quali caratteristiche deve possedere il software.
+Alla fine di questo processo viene redatto un Documento di Specifiche Funzionali contenente tutte le caratteristiche individuate tramite l' analisi. Questo documento viene sottoposto al cliente e fatto firmare per tutelare sia lui che l' azienda incaricata dello sviluppo.
+Questo processo alle volte può contenere dei Mokup del prodotto, ossia un anteprima del risultato contenente delle immagini che rappresentano le interfacce, certe volte interattive.
+L' analista deve avere una conoscenza di tutti i passaggi successivi al suo.
+
+Il controllo di versione è un sistema che consente di tenere traccia dei vari stati di sviluppo di ogni file del progetto e di gestire la collaborazione all' interno del team di sviluppo. È un sistema client/server: il server memorizza i dati mentre il client interagisce con l' utente.
+Il controllo di versione costituisce una storia degli stati dei file, che tiene traccia di ogni fase evolutiva di ogni file del progetto.
+Il controllo di versione è basato su un protocollo (regole da seguire per la codifica dei file per il server/client), i protocolli più diffusi sono GIT e SVN.
+La funzionalità principale del controllo di versione è il Repository: un contenitore di dati all' interno di un server di controllo di versione, che contiene file e cartelle. Esso contiene tutta la storia di un file, anche le cancellazioni. Il repository "vive" sul server, e può essere clonato sul computer degli sviluppatori tramite il client.
+Il controllo di versione è molto utile allo sviluppatore e offre vari vantaggi tra cui: 
+-poter individuare facilmente le differenze tra le versioni del file.
+-poter collaborare sullo stesso file con altri sviluppatori.
+-poter rispristinare una versione precedente del file in caso di errori o problemi.
+-poter lavorare anche senza connessione ad internet.
+-avere una copia della stessa repository utilizzata come backup.
+
+La progettazione è la fase successiva all' analisi, i progettisti ricevono il documento di specifiche funzionali, progettano la soluzione e viene stabilita la struttura del software. La progettazione è data da una scomposizione funzionale della soluzione, sia per semplificare lo sviluppo sia per preparare elementi che potranno essere riutilizzati in futuro.
+la struttura del software è un elenco o schema grafico dei vari moduli di cui sarà composto. Ogni modulo deve avere delle specifiche funzionali che indicano quali funzionalità deve avere, e l' interfaccia che è il risultato visivo mostrato.
+Vengono indicate le classi, i metodi e le proprietà che lo sviluppatore (chi si occupa del passaggio successivo alla progettazione) deve seguire.
+
+L' Issue Tracker è una funzione messa a disposizione dal controllo di versione, consente di tenere traccia degli errori e dello stato di correzione dei medesimi. È un sistema client/server che centralizza la gestione delle comunicazioni relative agli errori e alle nuove funzionalità dei software, ovvero consentono di:
+-Documentare ogni problema con descrizioni, priorità, stati.
+-Classificare e etichettare i problemi per una facile gestione.
+-Assegnare problemi specifici a determinati membri del team.
+-Monitorare ogni problema tenendone traccia dal momento della creazione fino alla risoluzione.
+-Facilitare la comunicazione tra i membri del team attraverso commenti o aggiornamenti sui problemi. 
+
+Il protocollo di test è un insieme di verifiche da effettuare su un prodotto software prima che questo superi il collaudo, segue le seguenti regole:
+-Definire gli obiettivi del test, ciò che si vuole verificare.
+-Descrivere i metodi e le tecniche dei test che verranno effettuati.
+-Elencare i casi di test specifici con dettagli su input e l' output atteso.
+-Definire in quali ambienti vanno eseguiti i test, per esempio su vari hardware con diverse caratteristiche o su software diversi.
+-Stabilire in quali casi i risultati del test portano al superamento o meno. 
+
+PRESENTAZIONE
+  -Il sito deve includere una sezione che presenti l' azienda.
+  -Una sezione per la presentazione dei prodotti offerti con descrizioni, immagini e specifiche.
+AREA PERSONALE
+  -Il cliente deve poter registrarsi e accedere alla propria area personale.
+E-commerce
+  -E-commerce integrato con vendita esclusiva a clienti finali e non a rivenditori.
+  -Possibilità di effettuare acquisti sia mediante registrazione su sito sia no per incentivare acquisizione 
+  clienti sporadici e non.
+NUOVO DESIGN
+  -Il sito deve essere progettando tenendo conto del nuovo design che il cliente vuole adottare, 
+  utilizzando la nuova combinazione di colori bianco-verde.
+  -integrazione del nuovo logo con forma morbida e arrotondata, abbandonando il vecchio logo.
+  -il sito deve riflettere le nuove logiche di comunicazione adottate.
+ACCESSIBILITÀ PER CLIENTI IPOVEDENTI
+  -implementazione di funzionalità che garantiscono la navigazione e l' acquisto per clienti ipovedenti, 
+  come ad esempio supporto allo Screen Reader, testi ingranditi e descrizioni per ogni immagine 
+  presente sul sito e i prodotti (per essere lette dallo Screen Reader).
+METODI DI PAGAMENTO
+  -Il sito deve supportare pagamenti tramite PayPal e le principali carte di credito.
+  -non sono richiesti pagamenti asincroni come bonifici o contrassegni.
+SICUREZZA
+ -Implementazione di misure di sicurezza per proteggere i dati del cliente e le transazioni.
