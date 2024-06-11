@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GENERICI */
+
+.logo {
+    width: 150px;
+    margin-bottom: -4px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h1 {
+    color: #F5F5DC;
+    font-size: 80px;
+    font-weight: 1000;
+}
+
+h2 {
+    font-size: 60px;
+    color: #F5F5DC;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 30px;
+    color: #F5F5DC;
+}
+
+span {
+    font-size: 30px;
+    color: #F5F5DC;
+}
+
+/* HEADER */
+
+header {
+    background-color: #556B2F;
+}
+
+header li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.contenitoreMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header p {
+    color: #F5F5DC;
+    font-size: 30px;
+    display: flex;
+}
+
+header a:hover {
+    text-decoration: underline #FFFFFF;
+}
+
+.hero {
+    background-image: url(immagini/imgBK.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.sezioneBenvenuto {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sezioneBenvenuto p {
+    background-color: #9caf88c0;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+/* MAIN */
+
+.contIntroduzione {
+    background-color: #9CAF88;
+    margin: 40px 8%;
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid #D3D3D3;
+}
+
+.introduzione {
+    width: 65%;
+    text-align: center;
+    margin: auto auto;
+}
+
+.strutturaCamere {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 8%;
+    padding: 40px;
+    background-color: #9CAF88;
+    border-radius: 20px;
+    border: 8px solid #D3D3D3;
+}
+
+.strutturaCamere img {
+    width: 400px;
+}
+
+.struttura,
+.camere {
+    border: 8px solid #D3D3D3;
+    padding: 40px;
+    border-radius: 20px;
+    width: 48%;
+    text-align: center;
+}
+
+.serviziContatti {
+    display: flex;
+}
+
+/* FOOTER */
