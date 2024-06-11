@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -138,4 +139,83 @@ header a:hover {
     display: flex;
 }
 
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GENERICI */
+
+.logo {
+    width: 150px;
+    margin-bottom: -4px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+h1 {
+    color: #B2D0E4;
+    font-size: 80px;
+    font-weight: 1000;
+}
+
+a {
+    background-color: #B2D0E4;
+    padding: 5%;
+    border-radius: 20px;
+    color: #4B6F44;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #4B6F44;
+}
+
+header li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.contenitoreMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url(immagini/imgBK.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 16%;
+    padding-bottom: 16%;
+    text-align: center;
+}
+
+.sezioneBenvenuto {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* MAIN */
+
+>>>>>>> 0316abb8e957042cc8140ac2c4ac97a5eb83dd5b
 /* FOOTER */
