@@ -110,3 +110,7 @@ header ul li a {
     color: red;
     /* serve per fare il link sulla stessa pagina */
 }
+
+#chiSiamo{
+    color: red;
+}
