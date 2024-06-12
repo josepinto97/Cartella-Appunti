@@ -11,11 +11,10 @@ body {
 /* GENERICI */
 
 .logo {
-    width: 150px;
+    width: 130px;
     margin-bottom: -4px;
-    border-radius: 50%;
     overflow: hidden;
-    padding: 10px;
+    padding: 5px;
 }
 
 h1 {
@@ -27,23 +26,32 @@ h1 {
 h2 {
     font-size: 60px;
     color: #F5F5DC;
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
-p {
-    font-size: 30px;
-    color: #F5F5DC;
+.pulsante {
+    background-color: #B0C4DE;
+    width: 85%;
+    margin: 20px auto 0px auto;
+    border-radius: 20px;
+    background-color: aqua;
 }
 
-span {
-    font-size: 30px;
+a:hover {
+    color: white;
+    text-decoration: underline #FFFFFF;
+}
+
+h3 {
     color: #F5F5DC;
+    font-size: 30px;
+    margin-bottom: 10PX;
 }
 
 /* HEADER */
 
-header {
+header,
+footer {
     background-color: #556B2F;
 }
 
@@ -70,12 +78,18 @@ header p {
     display: flex;
 }
 
-header a:hover {
-    text-decoration: underline #FFFFFF;
-}
-
 .hero {
     background-image: url(immagini/imgBK.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.heroStruttura {
+    background-image: url(immagini/Struttura.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -103,6 +117,7 @@ header a:hover {
     padding: 40px;
     border-radius: 20px;
     border: 8px solid #D3D3D3;
+    box-shadow: 10px 5px 20px #9CAF88;
 }
 
 .introduzione {
@@ -111,31 +126,103 @@ header a:hover {
     margin: auto auto;
 }
 
-.strutturaCamere {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px 8%;
-    padding: 40px;
-    background-color: #9CAF88;
-    border-radius: 20px;
-    border: 8px solid #D3D3D3;
+.introduzione p {
+    font-size: 30px;
+    color: #F5F5DC;
 }
 
-.strutturaCamere img {
-    width: 400px;
+.strutturaCamere,
+.salaGiardinoCucina,
+.serviziContatti {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.strutturaCamere,
+.salaGiardinoCucina,
+.serviziContatti img {
+    width: 100%;
 }
 
 .struttura,
-.camere {
+.camere,
+.servizi,
+.contatti {
     border: 8px solid #D3D3D3;
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     width: 48%;
     text-align: center;
+    margin: 10px 8%;
+    background-color: #9CAF88;
+    box-shadow: 10px 5px 20px #9CAF88;
+}
+
+.struttura p,
+.camere p,
+.servizi p,
+.contatti p,
+.salaComune p,
+.giardino p,
+.cucina p {
+    font-size: 20px;
+    color: #F5F5DC;
+    border: solid #D3D3D3;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.salaComune,
+.giardino,
+.cucina {
+    border: 8px solid #D3D3D3;
+    padding: 30px;
+    border-radius: 20px;
+    width: 48%;
+    text-align: center;
+    margin: 10px 1%;
+    background-color: #9CAF88;
+    box-shadow: 10px 5px 20px #9CAF88;
 }
 
 .serviziContatti {
     display: flex;
 }
 
+.pulsante a {
+    text-decoration: none;
+    color: #556B2F;
+    font-size: 20px;
+    display: block;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
 /* FOOTER */
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.menuFooter {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menuFooter a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+.menuFooter li :hover {
+    text-decoration: underline #FFFFFF;
+}

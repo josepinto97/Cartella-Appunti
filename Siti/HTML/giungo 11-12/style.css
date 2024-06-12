@@ -106,11 +106,17 @@ header ul li a {
     /* per nascondere tutto quello che va fuori dal contenitore */
 }
 
-#servizi{
+#servizi {
     color: red;
     /* serve per fare il link sulla stessa pagina */
 }
 
-#chiSiamo{
+#chiSiamo {
     color: red;
+}
+
+p {
+    text-shadow: 2px -2px 1px red;
+    font-size: 30px;
+    /* per mettere l' ombra nel testo */
 }
