@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -105,112 +104,9 @@ header ul li a {
     /* per arrotondare un box */
     overflow: hidden;
     /* per nascondere tutto quello che va fuori dal contenitore */
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-/* a:visited {
-    color: darkmagenta;
-    per quando si è gia visitato un sito cambia il colore del link
-} */
-
-a:hover {
-    color: blue;
-    text-decoration: underline orange;
-    background-color: aqua;
-    /* questo indica quando andiamo sopra con il mouse e serve per cambiare stato all elemento */
-}
-
-a:active {
-    color: black;
-    /* indica quando si preme con il tasto sinistro del muose un oggetto */
-}
-
-header ul li {
-    display: inline-block;
-    list-style-type: none;
-    background-color: darkcyan;
-}
-
-header nav {
-    background-color: darkcyan;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    /* serve per mettere tutto in maiuscolo, esistono anche altre proprietà */
-    font-weight: 500;
-    font-size: 20px;
-    display: block;
-    /* cosi facciamo diventare tutto clicccabile un pulsante e non solo la parola */
-    padding: 8px 16px;
-}
-
-.hero {
-    background-image: url("immagini/grecia.jpg");
-    /* per mettere un immagine di sfondo */
-    /* background-size: contain;
-    utilizza una dimensoione dell' immagine come prametro per il riempimento */
-    /*background-repeat: no-repeat;
-     serve per non ripetere in sequenza l' immagine */
-    background-size: cover;
-    background-position: center;
-    /* per riposizionare l' immagine */
-    padding: 7%;
-}
-
-.heroContent {
-    width: 39%;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.756);
-    /* modificare la scala di trasparenza per il bakground */
-    text-align: center;
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.pulsante {
-    width: 180px;
-    margin: 10px auto;
-}
-
-.pulsante a {
-    color: black;
-    padding: 5px 10px;
-    background-color: yellowgreen;
-    padding: 8px 10;
-    border: solid 4px green;
-    border-radius: 8px;
-}
-
-.pulsante a:hover {
-    background-color: rgb(99, 134, 33);
-    color: white;
-    border: solid 4px white;
-}
-
-.imgStondata {
-    width: 520px;
-    height: auto;
-    border: 15px solid black;
-    border-radius: 100%;
-    /* per arrotondare un box */
-    overflow: hidden;
-    /* per nascondere tutto quello che va fuori dal contenitore */
->>>>>>> 0316abb8e957042cc8140ac2c4ac97a5eb83dd5b
+#servizi{
+    color: red;
+    /* serve per fare il link sulla stessa pagina */
 }
