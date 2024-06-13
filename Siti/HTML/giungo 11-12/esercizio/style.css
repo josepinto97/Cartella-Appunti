@@ -51,7 +51,8 @@ h3 {
 /* HEADER */
 
 header,
-footer {
+footer,
+.contenitoreMenu {
     background-color: #556B2F;
 }
 
@@ -61,18 +62,23 @@ header li {
     font-size: 30px;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 .contenitoreMenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a {
+.contenitoreMenu a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-header p {
+.hero p {
     color: #F5F5DC;
     font-size: 30px;
     display: flex;
