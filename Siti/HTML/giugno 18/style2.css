@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    background-color: darkgray;
+}
+
+.contImmagine {
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(https://picsum.photos/id/20/1200);
+    height: 500px;
+    width: 1200;
+    background-size: cover;
+}
+
+/* .contImmagine img {
+    width: 100%;
+} */
+
+/* @media : serve per applicare delle trasformazioni alle classi quando si supera una determinata dimensione della pagina o altri fattori (min-width o max-width */
+
+@media (max-width: 768px) {
+    h1 {
+        color: greenyellow;
+    }
+
+    .contImmagine{
+        background-image: url(https://picsum.photos/id/15/1200);
+    }
+
+    /* questo codice per cambiare l immagine di sfondo superata una grandezza minima */
+
+    .contImmagine {
+        width: 90%;
+    }
+}

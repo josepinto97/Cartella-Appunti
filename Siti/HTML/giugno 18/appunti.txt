@@ -1,0 +1,8 @@
+lorem picsum: generatore di immagini random con grandezze impostate.
+impostazioni > live server > use local ip > copia indirizzo sul telefono
+
+FileRun / Next Cloud: per gestire le aree private dei clienti
+
+FLEX BOX PLAYGROUNF:  sito per le proprieta del flex
+
+GRADIENT GENERATOR: per creare le sfumature

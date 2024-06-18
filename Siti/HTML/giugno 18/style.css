@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    justify-content: space-between;
+    padding: 2% 1%;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+nav{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    background-color: white;
+}
+
+.menu li a:hover {
+    color: white;
+    background-color: lightgray;
+}
+
+.menuIcon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/*  */
+
+h1 {
+    text-align: center;
+    margin: 3% auto;
+}
+
+.copertina {
+    text-align: center;
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.copertina img {
+    width: 100%;
+    /* lunghezza massima di un box che non deve superare, MIN-WIDTH serve per una misura minima da non superare */
+    height: 500px;
+    object-fit: cover;
+    /* OBJECT-FIT cover: per adattare l immagine a tutto il box poi usando per muoverla si usa OBJECT-POSITION */
+}
+
+.contCopertina {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 300px 20px 20px 20px;
+    /* questo padding serve per ingrandire la sfumatura */
+    color: white;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: lightgray;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgb(212, 212, 172);
+    padding: 1%;
+    margin: 1%;
+    width: 300px;
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+
+    h1 {
+        color: violet;
+    }
+
+    .menu {
+        display: none;  
+        width: 100%;
+        clear: both;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .menuIcon {
+        display: block;
+        float: right;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .copertina,
+    .cardContainer {
+        max-width: 100%;
+    }
+
+    .card {
+        margin: 4% 8%;
+        padding: 4%;
+    }
+}
