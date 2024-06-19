@@ -1,0 +1,2 @@
+WordPress: serve per creare siti e gestire i contenuti delle pagine web.
+con WordPress quando si fa una sito web siottine soltanto l index.php perche compone dinamicamnete tramite server le altre pagine web.

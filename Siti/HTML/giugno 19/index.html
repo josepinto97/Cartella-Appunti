@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="contenitore">
+            <form action="" method="post" class="contactForm">
+                <h2>Modulo di contatto</h2>
+                <div class="formGroup">
+                    <p>Nome:</p>
+                    <!-- indica l etichetta -->
+                    <input type="text" name="name" id="name" required>
+                    <!-- name e id sono i campi che richiede il server per salvare le variabili -->
+                    <!-- tipo di elemento che vado a inserire -->
+                    <!-- required serve per segnalare che un campo deve essere compilato -->
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="formGroup">
+                    <label for="oggetto">Oggetto:</label>
+                    <input type="text" name="oggetto" id="oggetto" required>
+                </div>
+                <div class="formGroup">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea name="messaggio" id="messaggio" raws="5" required></textarea>
+                </div>
+                <div class="formGroup">
+                    <label for="ragione">Motivo del contatto</label>
+                    <select name="ragione" id="ragione">
+                        <option value="">seleziona un opzione</option>
+                        <option value="informazioni">richiesta di informazioni</option>
+                        <option value="supporto">richiesta di supporto</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <input type="checkbox" name="news" id="news">
+                    Iscriviti alla news letter
+                </div>
+                <div class="formGroup">
+                    <input type="radio" name="" id="">
+                    si
+                    <input type="radio" name="" id="">
+                    no
+                </div>
+                <button type="submit">Invia</button>
+                <button type="reset">Resetta</button>
+            </form>
+        </div>
+        <!-- tag usato per i moduli di compilazioni -->
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

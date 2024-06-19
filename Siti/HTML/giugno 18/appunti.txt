@@ -6,3 +6,11 @@ FileRun / Next Cloud: per gestire le aree private dei clienti
 FLEX BOX PLAYGROUNF:  sito per le proprieta del flex
 
 GRADIENT GENERATOR: per creare le sfumature
+
+1em = 16px
+
+1em: e il valore standard del impostazione base del body (ovvero 16px), se si cambia i px del body a 20px l em diventa di 20px.
+
+rem: prende il valore della root
+
+viewport: width o height: 100vw altra miscura che serve per / o vh che si basano sulla grandezza della finestra

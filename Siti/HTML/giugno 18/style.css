@@ -7,7 +7,6 @@
 header {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     background-color: lightgray;
     justify-content: space-between;
     padding: 2% 1%;
@@ -17,8 +16,8 @@ header {
     display: inline-block;
 }
 
-nav{
-    display: inline-block;
+nav {
+/*     display: inline-block; */
     padding: 10px 20px;
 }
 
@@ -41,7 +40,7 @@ nav{
     cursor: pointer;
 }
 
-/*  */
+/* MAIN */
 
 h1 {
     text-align: center;
@@ -59,6 +58,8 @@ h1 {
     width: 100%;
     /* lunghezza massima di un box che non deve superare, MIN-WIDTH serve per una misura minima da non superare */
     height: 500px;
+    /* height: 100vh;
+    vh altezza di una finestra */
     object-fit: cover;
     /* OBJECT-FIT cover: per adattare l immagine a tutto il box poi usando per muoverla si usa OBJECT-POSITION */
 }
@@ -92,14 +93,14 @@ h1 {
     border-radius: 12px;
 }
 
-@media (min-width: 768px) and (max-width: 950px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     h1 {
         color: violet;
     }
 
     .menu {
-        display: none;  
+        display: none;
         width: 100%;
         clear: both;
     }
@@ -121,7 +122,29 @@ h1 {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        width: 100%;
+        clear: both;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .menuIcon {
+        display: block;
+        float: right;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+    }
 
     .copertina,
     .cardContainer {
@@ -132,4 +155,9 @@ h1 {
         margin: 4% 8%;
         padding: 4%;
     }
+
+    .copertina {
+        position: relative;
+    }
+
 }
