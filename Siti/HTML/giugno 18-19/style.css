@@ -9,7 +9,7 @@ header {
     align-items: center;
     background-color: lightgray;
     justify-content: space-between;
-    padding: 2% 1%;
+    padding: 2% 1%; 
 }
 
 .menu li {
@@ -19,6 +19,10 @@ header {
 nav {
 /*     display: inline-block; */
     padding: 10px 20px;
+}
+
+.menuNav{
+    background-color: aqua;
 }
 
 .menu li a {

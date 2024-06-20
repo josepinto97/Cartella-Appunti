@@ -1,0 +1,15 @@
+Per caricare le pagine web su internet si usano: File Zilla, Cyber Duck
+ID: fto.ensof.it E-mail: jose@ensof.it PW: CorsoCescot24
+Dentro al server va messo tutta la cartella del sito (immagini index style e altro)
+wp-admin per entrare nel backoffice
+MAMP e XAMPP: ambiente php
+MAMP: crea dentro a una cartella, dove dentro metterà una serie di cartelle e file e l' applicativo da lamciare per il funzionamento del server. Crea l' ambiente di sviluppo PHP.
+    Questo tutto in locale, simula un server locale.
+apro MAMP avvio i server vado a trovare la cartella HTDOCS e dentro importo tutti i file di WordPress, deìntro a questa cartella e possibile creare una nuova cartella  
+    che puo contenere un altra installazione.
+Apri la pagina internet dal controllo stato del server e andere su PHPMYADMIN
+Il nome utente e pw in locale sono tutte e 2 roo
+Dalla barre degli indirizzi le leva mamp e si cerca, nella nuova pagina si insericono i dati che sono nome server creato nel passaggio prima e poi e preferibile mettere un nome
+    diverso nel nome della tabella.
+PW: 3#r%6)oGq$b6nlpGzf
+La casella visibilità a i motori di ricerca serve per quando si effetta la manutenzione.

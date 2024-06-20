@@ -14,7 +14,7 @@
 
     <header>
         <div class="logo">logo</div>
-        <nav>
+        <nav id="menuNav">
             <div class="menuIcon" id="menuIcon">&#9776</div>
             <ul class="menu" id="menu">
                 <li><a href="#">HOME</a></li>
@@ -69,13 +69,16 @@
     <script>
         document.getElementById('menuIcon').addEventListener('click', function () {
             var menu = document.getElementById('menu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-                menu.style.flexDirection = 'column';
+            var menuNav = document.getElementById('menuNav');
+            var menuIcon = document.getElementById('menuIcon')
+            if (menu.style.display === 'none') {
                 menu.style.display = 'block';
-
+                menu.style.display = 'flex';
+                menu.style.justifyContent = 'right';
+                menu.style.flexDirection = 'column';
+            } else {
+                menu.style.display = 'none';
+                menuNav.style.display = 'block';
             }
         });
     </script>
