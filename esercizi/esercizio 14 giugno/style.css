@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENERICI */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sottolineaturaNone a{
+    text-decoration: none;
+}
+
+h3{
+    margin: 4%;
+    font-size: 20px;
+}
+
+h2{
+    margin: 4%;
+    font-size: 30px;
+}
+
+p{
+    margin: 4%;
+    font-size: 17px;
+}
+
+.pulsanteBlu a{
+    margin: 4%;
+    font-size: 20px;
+    background-color: blue;
+    width: 40%;
+    padding: 2% 1%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    display: block;
+}
+
+.pulsanteBlu a:hover{
+    background-color: rgb(116, 116, 236);
+}
+
+/* HEADER */
+
+header{
+    background-color: #151821;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 9% 0 9%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.logo{
+    width: 20%;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 6px;
+}
+
+.menu li:hover{
+    font-weight: 600;
+}
+
+.menu a, .pulsanteVerde a{
+    color: white;
+}
+
+.pulsanteVerde a{
+    background-color: green;
+    padding: 7px 3px;
+    border-radius: 10px;
+}
+
+.pulsanteVerde a:hover{
+    background-color: white;
+    margin: 10px 6px;
+    color: black;
+}
+
+/* MAIN */
+
+.contenutoUno{
+    margin: 2% 10% 0 10%;
+}
+
+.sezioneUno{
+    display: flex;
+}
+
+.articoloUno{
+    width: 40%;
+}
+
+.immagineUno{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    left: 5%;
+}
+
+
+
+.immagineUnoDue{
+    margin: 4%;
+    width: 40%;
+}
+
+.immagineUnoUno{
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    right: 47%;
+    top: 53%;
+}
+
+/* FOOTER */
