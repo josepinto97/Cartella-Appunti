@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="provaMenu.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">DANCE SUDIO</div>
+        <nav id="menuNav">
+            <div class="menuIcon" id="menuIcon">&#9776</div>
+            <ul class="menu" id="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CHI SIAMO</a></li>
+                <li><a href="#">SERVIZI</a></li>
+                <li><a href="#">CONTATTACI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('menuIcon').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
