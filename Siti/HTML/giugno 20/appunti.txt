@@ -8,7 +8,7 @@ MAMP: crea dentro a una cartella, dove dentro metterà una serie di cartelle e f
 apro MAMP avvio i server vado a trovare la cartella HTDOCS e dentro importo tutti i file di WordPress, deìntro a questa cartella e possibile creare una nuova cartella  
     che puo contenere un altra installazione.
 Apri la pagina internet dal controllo stato del server e andere su PHPMYADMIN
-Il nome utente e pw in locale sono tutte e 2 roo
+Il nome utente e pw in locale sono tutte e 2 root
 Dalla barre degli indirizzi le leva mamp e si cerca, nella nuova pagina si insericono i dati che sono nome server creato nel passaggio prima e poi e preferibile mettere un nome
     diverso nel nome della tabella.
 PW: 3#r%6)oGq$b6nlpGzf

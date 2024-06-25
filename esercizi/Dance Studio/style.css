@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* GENERICI */
 
 body {
@@ -290,6 +291,7 @@ footer p {
 
     body{
         background-color: aqua;
+        font-size: 10px;
     }
 
     .accesso{

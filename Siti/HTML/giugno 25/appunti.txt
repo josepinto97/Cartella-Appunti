@@ -1,0 +1,3 @@
+Le pagine WordPress le considera come pagine indipendenti.
+
+Gli articoli seguono la temporalità di pubblicazione e scritttura, raggruppati in categorie per poterli raggrupadre e suddividere.
