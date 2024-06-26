@@ -1,0 +1,24 @@
+Si richiede un sito internet del ristorante FOOD4YOU con le seguenti caratteristiche:
+
+-L' intero sito deve essere responsive, visualizzabile senza problemi su tablet ( grandezza che varia da 1024 x 1366 px a 768 x 1024 px) e su cellulari ( grandezza che
+    varia da 412 x 915 px e dimensioni inferiori).
+
+-Il sito deve avere una home page index e ulteriori 4 pagine: HOME, MENU, EVENTI e CONTATTI.
+
+-Header cosi composto: 
+    -logo e menu di navigazione.
+    -Hero con un titolo e una promozione al sito con relativo pulsante per ordinare e un immagine di benvenuto.
+
+-Main cosi composto:
+    -breve introduzione al ristorante e i piatti.
+    -esposizione dei piatti indicati dal cliente quali; tagliatelle con pomodorini, bruschetta italiana, linguine al pesto.
+    -sezione che indica i piatti del giorno e quelli suggeriti.
+
+-Footer cosi composto:
+    -logo del ristorante.
+    -descrizione della posizione del ristorante e breve storia di esso con affiancato l' indirizzo interagibile e la mail.
+    -privacy con affiancato i loghi dei vari social con i vari collegamenti.
+
+-Il cliente ha fornito il mokup e il progetto verrà eseguito sulla base di esso con i relativi colori e immagini forniti anche loro dal cliente.
+
+-I loghi dei social cosi come i loghi del ristorante e i vari pulsanti di collegamento a pagine esterne e inerne saranno interagibili.

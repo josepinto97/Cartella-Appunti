@@ -1,0 +1,431 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GENERICI */
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.fontEsterno {
+    font-family: "Fredericka the Great", serif;
+}
+
+.menu {
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fSize2-5rem {
+    font-size: 2.5rem;
+}
+
+.fSize4rem {
+    font-size: 4rem;
+}
+
+.fSize1-5rem {
+    font-size: 1.5rem;
+}
+
+.fWeight600 {
+    font-weight: 600;
+}
+
+.fWeight300 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 3%;
+}
+
+.margin2 {
+    margin: 2%;
+}
+
+.coloreWhite {
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    background-image: url(Immagini/sfondo.jpg);
+    background-position: right;
+    height: 100vh;
+}
+
+.logoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    height: 8vh;
+}
+
+.logoMenu li {
+    display: inline-block;
+    font-size: 2rem;
+    padding-left: 30px;
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 85%;
+}
+
+.introduzione {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.piattoSpaghetti img {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 55%;
+    bottom: 5%;
+}
+
+.pomodoro img {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+}
+
+.spaghetti img {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: -9%;
+    bottom: -15%;
+}
+
+.basilico1 img {
+    width: 6%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.basilico2 img {
+    width: 6%;
+    height: auto;
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.strichetto img {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+
+.immaginiHero {
+    width: 50%;
+    height: 100%;
+}
+
+.promozione {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 40px;
+    margin: 10% auto;
+}
+
+.numeri {
+    font-size: 2.8rem;
+}
+
+.pulsante a {
+    padding: 4px 6px;
+    border: solid black 1px;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+.pulsante a:hover {
+    background-color: #dedca3;
+}
+
+/* MAIN */
+
+.card1 {
+    text-align: center;
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.card2 img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 8%;
+}
+
+.piatto1,
+.piatto2,
+.piatto3 {
+    text-align: center;
+}
+
+.strisciaColorata {
+    width: 100%;
+    height: 20vh;
+    background-color: #dedca3;
+    position: absolute;
+    z-index: -1;
+    bottom: 40%;
+}
+
+.piattiGiorno {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.immagine1 {
+    height: 100%;
+}
+
+.immagine2 {
+    height: 10%;
+    width: 50%;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 8%;
+    height: 60vh;
+    background-image: url(Immagini/BG-footerOtt.jpg);
+    padding: 3% 5%;
+}
+
+.logo2 {
+    width: 20%;
+    height: auto;
+}
+
+.posizioneDescrizione {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.posizioneTesto {
+    width: 30%;
+}
+
+.posizione {
+    display: flex;
+}
+
+.posizione img {
+    height: 15px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.posta {
+    display: flex;
+    gap: 5px;
+}
+
+.posta img {
+    height: 15px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social img {
+    height: 40px;
+    width: auto;
+    margin-left: 6px;
+}
+
+/* MEDIA */
+
+@media (min-width: 412px) and (max-width: 1024px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        display: none;
+        background-color: #ffe001;
+        padding: 2%;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    header {
+        position: relative;
+        height: 60vh;
+    }
+
+    footer {
+        height: 35vh;
+    }
+
+    .strisciaColorata {
+        height: 10vh;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    html {
+        font-size: 12px;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        display: none;
+        background-color: #ffe001;
+        padding: 2%;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    header {
+        position: relative;
+        height: 65vh;
+    }
+
+    footer {
+        height: 45vh;
+    }
+
+    .strisciaColorata {
+        height: 10vh;
+    }
+
+
+}
+
+@media (max-width: 412px) {
+
+    html {
+        font-size: 6px;
+    }
+
+    .logo {
+        height: 4vh;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: right;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        display: none;
+        background-color: #ffe001;
+        padding: 2%;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    header {
+        position: relative;
+        height: 40vh;
+    }
+
+    footer {
+        height: 25vh;
+    }
+
+    .strisciaColorata {
+        height: 5vh;
+    }
+
+    .social img {
+        height: 20px;
+    }
+
+    .posta img {
+        height: 10px;
+    }
+
+    .posizione img {
+        height: 10px;
+    }
+
+    .logo2 {
+        width: 20%;
+        height: auto;
+    }
+
+    header {
+        background-position: right;
+    }
+
+}
