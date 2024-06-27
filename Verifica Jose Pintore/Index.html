@@ -24,7 +24,7 @@
             <nav id="menuNav">
                 <ul class="menu" id="menu">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">MENU</a></li>
+                    <li><a href="menu.html">MENU</a></li>
                     <li><a href="#">EVENTI</a></li>
                     <li><a href="#">CONTATTI</a></li>
                 </ul>
@@ -148,8 +148,7 @@
     <script>
         document.getElementById('menuIcon').addEventListener('click', function () {
             var menu = document.getElementById('menu');
-            if (menu.style.display === 'none') {
-                menu.style.display = 'block';
+            if (menu.style.display === 'none' || menu.style.display === '') {
                 menu.style.display = 'flex';
             } else {
                 menu.style.display = 'none';

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD 4 YOU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="headerMenu">
+        <div class="logoMenu">
+            <div class="logo">
+                <a href="Index.html"><img src="Immagini/logo.png" alt="logo del sito food 4 you"></a>
+            </div>
+            <nav id="menuNav">
+                <ul class="menu" id="menu">
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="#">MENU</a></li>
+                    <li><a href="#">EVENTI</a></li>
+                    <li><a href="#">CONTATTI</a></li>
+                </ul>
+            </nav>
+            <div class="menuIcon" id="menuIcon">&#9776</div>
+        </div>
+    </header>
+
+
+
+    <footer>
+        <div class="logo2 logo">
+            <a href="Index.html"><img src="Immagini/logo-giallo.png" width="100%" height="100%" alt="logo del sito"></a>
+        </div>
+        <section class="posizioneDescrizione">
+            <div class="posizioneTesto">
+                <p class="coloreWhite">Siamo in via Don Bedetti, in zona Corticella, dove la città di
+                    Bologna sfuma nella periferia. Questo è il regno del notro chef e
+                    del maître , amici e soci che nel 2006 hanno deciso di aprire un
+                    ristorante “basato su ingredienti di prima qualità e rispetto della
+                    tradizione”. Cosa ordinare? C’è solo l’imbarazzo della scelta!!</p>
+            </div>
+            <div>
+                <div class="coloreWhite posizione">
+                    <img src="Immagini/Asset 1.png" alt="simbolo della posizione">
+                    <p>Via Don Bedetti, 26 - 40129 Bologna</p>
+                </div>
+                <div class="coloreWhite posta">
+                    <img src="Immagini/Asset 2.png" alt="simbolo della posta">
+                    <p>info@foodforyou.com</p>
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <p class="coloreWhite">© Jose Pintore Cescot - Front End Developer 2024. All rights reserved.</p>
+            <div>
+                <a href=""><img src="Immagini/Instagram.png" alt="logo Instagram"></a>
+                <a href=""><img src="Immagini/Facebook.png" alt="logo Facebook"></a>
+                <a href=""><img src="Immagini/Twitter.png" alt="logo Twitter"></a>
+                <a href=""><img src="Immagini/WhatsApp.png" alt="logo WhatsApp"></a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        document.getElementById('menuIcon').addEventListener('click', function () {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

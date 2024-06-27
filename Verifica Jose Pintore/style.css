@@ -64,6 +64,10 @@ header {
     height: 100vh;
 }
 
+.headerMenu{
+    height: 10%;
+}
+
 .logoMenu {
     display: flex;
     justify-content: space-between;
@@ -302,12 +306,12 @@ footer {
     }
 
     .menu {
+        display: none;
         flex-direction: column;
         text-align: right;
         position: absolute;
         right: 10%;
         top: 10%;
-        display: none;
         background-color: #ffe001;
         padding: 2%;
     }
