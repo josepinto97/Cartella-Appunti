@@ -1,0 +1,49 @@
+h1::first-letter{
+    color: orange;
+    font-size: 60px;
+    font-family: cursive;
+}
+
+p::first-line{
+    color: orange;
+    font-family: cursive;
+}
+
+.required::before{
+    content: "*";
+    color: red;
+    font-size: 22px;
+}
+
+.button::before{
+    content: "▶";
+    font-size: 20px
+}
+
+.button:hover::after{
+    content: "◀";
+    font-size: 20px;
+    color: red;
+}
+
+.button:hover::before{
+    content: "";
+}
+
+.menu li{
+    border-right: solid red 3px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.menu li:last-child{
+    border-right: none;
+}
+
+.menu li:nth-child(3){
+    color: orange;
+}
+
+section div:nth-of-type(4){
+    color: green;
+}
