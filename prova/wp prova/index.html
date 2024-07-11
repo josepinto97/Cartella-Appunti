@@ -1,0 +1,2266 @@
+<!doctype html>
+<html lang="it-IT">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <title>Restaurant v2</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel="alternate" type="application/rss+xml" title="Restaurant v2 &raquo; Feed" href="http://localhost/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Restaurant v2 &raquo; Feed dei commenti"
+        href="http://localhost/comments/feed/" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/localhost\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5" } };
+        /*! This file is auto-generated */
+        !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <link rel='stylesheet' id='dashicons-css' href='http://localhost/wp-includes/css/dashicons.min.css?ver=6.5.5'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css' href='http://localhost/wp-includes/css/admin-bar.min.css?ver=6.5.5'
+        type='text/css' media='all' />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="home page-template page-template-page-templates page-template-pagebuilder page-template-page-templatespagebuilder-php page page-id-505 logged-in admin-bar no-customize-support wp-custom-logo everest-forms-no-js zak-site-layout--stretched zak-container--wide zak-content-area--bordered has-page-header has-breadcrumbs">
+
+    <script type="text/javascript">
+            /* <![CDATA[ */
+
+            (function () {
+                var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
+
+                request = true;
+
+                b[c] = b[c].replace(rcs, ' ');
+                // The customizer requires postMessage and CORS (if the site is cross domain).
+                b[c] += (window.postMessage && request ? ' ' : ' no-') + cs;
+            }());
+
+        /* ]]> */
+    </script>
+    <div id="wpadminbar" class="nojq nojs">
+        <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Barra degli strumenti">
+            <ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu">
+                <li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false"
+                        href='http://localhost/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span
+                            class="screen-reader-text">Informazioni su WordPress</span></a>
+                    <div class="ab-sub-wrapper">
+                        <ul role='menu' aria-label='Informazioni su WordPress' id='wp-admin-bar-wp-logo-default'
+                            class="ab-submenu">
+                            <li id='wp-admin-bar-about'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/about.php'>Informazioni su WordPress</a></li>
+                            <li id='wp-admin-bar-contribute'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/contribute.php'>Partecipa</a></li>
+                        </ul>
+                        <ul role='menu' aria-label='Informazioni su WordPress' id='wp-admin-bar-wp-logo-external'
+                            class="ab-sub-secondary ab-submenu">
+                            <li id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem"
+                                    href='https://it.wordpress.org/'>WordPress.org</a></li>
+                            <li id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem"
+                                    href='https://wordpress.org/documentation/'>Documentazione</a></li>
+                            <li id='wp-admin-bar-learn'><a class='ab-item' role="menuitem"
+                                    href='https://learn.wordpress.org/'>Learn WordPress</a></li>
+                            <li id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem"
+                                    href='https://it.wordpress.org/support/forums/'>Supporto</a></li>
+                            <li id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem"
+                                    href='https://it.wordpress.org/support/forums/'>Feedback</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false"
+                        href='http://localhost/wp-admin/'>Restaurant v2</a>
+                    <div class="ab-sub-wrapper">
+                        <ul role='menu' aria-label='Restaurant v2' id='wp-admin-bar-site-name-default'
+                            class="ab-submenu">
+                            <li id='wp-admin-bar-dashboard'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/'>Bacheca</a></li>
+                            <li id='wp-admin-bar-plugins'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/plugins.php'>Plugin</a></li>
+                        </ul>
+                        <ul role='menu' aria-label='Restaurant v2' id='wp-admin-bar-appearance' class="ab-submenu">
+                            <li id='wp-admin-bar-themes'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/themes.php'>Temi</a></li>
+                            <li id='wp-admin-bar-widgets'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/widgets.php'>Widget</a></li>
+                            <li id='wp-admin-bar-menus'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/nav-menus.php'>Menu</a></li>
+                            <li id='wp-admin-bar-background' class="hide-if-customize"><a class='ab-item'
+                                    role="menuitem"
+                                    href='http://localhost/wp-admin/themes.php?page=custom-background'>Sfondo</a></li>
+                            <li id='wp-admin-bar-header' class="hide-if-customize"><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/themes.php?page=custom-header'>Header</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' role="menuitem"
+                        href='http://localhost/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%2F'>Personalizza</a>
+                </li>
+                <li id='wp-admin-bar-updates'><a class='ab-item' role="menuitem"
+                        href='http://localhost/wp-admin/update-core.php'><span class="ab-icon"
+                            aria-hidden="true"></span><span class="ab-label" aria-hidden="true">2</span><span
+                            class="screen-reader-text updates-available-text">2: aggiornamenti disponibili</span></a>
+                </li>
+                <li id='wp-admin-bar-comments'><a class='ab-item' role="menuitem"
+                        href='http://localhost/wp-admin/edit-comments.php'><span class="ab-icon"
+                            aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0"
+                            aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0
+                            commenti in moderazione</span></a></li>
+                <li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' role="menuitem"
+                        aria-expanded="false" href='http://localhost/wp-admin/post-new.php'><span class="ab-icon"
+                            aria-hidden="true"></span><span class="ab-label">Nuovo</span></a>
+                    <div class="ab-sub-wrapper">
+                        <ul role='menu' aria-label='Nuovo' id='wp-admin-bar-new-content-default' class="ab-submenu">
+                            <li id='wp-admin-bar-new-post'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/post-new.php'>Articolo</a></li>
+                            <li id='wp-admin-bar-new-media'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/media-new.php'>Media</a></li>
+                            <li id='wp-admin-bar-new-page'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/post-new.php?post_type=page'>Pagina</a></li>
+                            <li id='wp-admin-bar-new-user'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/user-new.php'>Utente</a></li>
+                            <li id='wp-admin-bar-everest-forms'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/admin.php?page=evf-builder&#038;create-form=1'>Everest
+                                    Forms</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-edit'><a class='ab-item' role="menuitem"
+                        href='http://localhost/wp-admin/post.php?post=505&#038;action=edit'>Modifica pagina</a></li>
+            </ul>
+            <ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu">
+                <li id='wp-admin-bar-search' class="admin-bar-search">
+                    <div class="ab-item ab-empty-item" tabindex="-1" role="menuitem">
+                        <form action="http://localhost/" method="get" id="adminbarsearch"><input class="adminbar-input"
+                                name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label
+                                for="adminbar-search" class="screen-reader-text">Cerca</label><input type="submit"
+                                class="adminbar-button" value="Cerca" /></form>
+                    </div>
+                </li>
+                <li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' role="menuitem"
+                        aria-expanded="false" href='http://localhost/wp-admin/profile.php'>Ciao, <span
+                            class="display-name">Jose</span><img alt=''
+                            src='http://0.gravatar.com/avatar/fe442d33f7d52682dc048a173b756d7b?s=26&#038;d=mm&#038;r=g'
+                            srcset='http://0.gravatar.com/avatar/fe442d33f7d52682dc048a173b756d7b?s=52&#038;d=mm&#038;r=g 2x'
+                            class='avatar avatar-26 photo' height='26' width='26' decoding='async' /></a>
+                    <div class="ab-sub-wrapper">
+                        <ul role='menu' aria-label='Ciao, Jose' id='wp-admin-bar-user-actions' class="ab-submenu">
+                            <li id='wp-admin-bar-user-info'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-admin/profile.php'><img alt=''
+                                        src='http://0.gravatar.com/avatar/fe442d33f7d52682dc048a173b756d7b?s=64&#038;d=mm&#038;r=g'
+                                        srcset='http://0.gravatar.com/avatar/fe442d33f7d52682dc048a173b756d7b?s=128&#038;d=mm&#038;r=g 2x'
+                                        class='avatar avatar-64 photo' height='64' width='64' decoding='async' /><span
+                                        class='display-name'>Jose</span><span class='display-name edit-profile'>Modifica
+                                        profilo</span></a></li>
+                            <li id='wp-admin-bar-logout'><a class='ab-item' role="menuitem"
+                                    href='http://localhost/wp-login.php?action=logout&#038;_wpnonce=b7ed615ae4'>Esci</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="page" class="zak-site">
+        <a class="skip-link screen-reader-text" href="#zak-content">Vai al contenuto</a>
+
+        <header id="zak-masthead" class="zak-header zak-layout-1 zak-layout-1-style-2">
+
+
+            <div class="zak-main-header">
+                <div class="zak-container">
+                    <div class="zak-row">
+
+                        <div class="zak-header-col zak-header-col--1">
+
+
+                            <div class="site-branding">
+                                <a href="http://localhost/" class="custom-logo-link" rel="home" aria-current="page"><img
+                                        width="160" height="56"
+                                        src="http://localhost/wp-content/uploads/2024/03/logo-1.png" class="custom-logo"
+                                        alt="Restaurant v2" decoding="async" /></a>
+                                <div class="site-info-wrap">
+
+                                    <p class="site-title ">
+                                        <a href="http://localhost/" rel="home">Restaurant v2</a>
+                                    </p>
+
+
+                                </div>
+                            </div><!-- .site-branding -->
+
+                        </div> <!-- /.zak-header__block--one -->
+
+
+                        <div class="zak-header-col zak-header-col--2">
+
+
+                            <nav id="zak-primary-nav"
+                                class="zak-main-nav main-navigation zak-primary-nav zak-layout-1 zak-layout-1-style-1">
+                                <ul id="zak-primary-menu" class="zak-primary-menu">
+                                    <li id="menu-item-1613"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-505 current_page_item menu-item-1613">
+                                        <a href="http://localhost/" aria-current="page">Home</a></li>
+                                    <li id="menu-item-1592"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592">
+                                        <a href="http://localhost/about/">About</a></li>
+                                    <li id="menu-item-1612"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1612">
+                                        <a href="http://localhost/menus/">Menus</a></li>
+                                    <li id="menu-item-1591"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1591">
+                                        <a href="http://localhost/blog/">Blog</a></li>
+                                    <li id="menu-item-1596"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596">
+                                        <a href="http://localhost/gallery/">Gallery</a></li>
+                                    <li id="menu-item-1594"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594">
+                                        <a href="http://localhost/contact/">Contact</a></li>
+                                </ul>
+                            </nav><!-- #zak-primary-nav -->
+
+                            <div class="zak-header-buttons zak-header-buttons--desktop">
+
+                                <div class="zak-header-button zak-header-button--1">
+                                    <a class="zak-button" href="https://zakrademos.com/restaurant-v2/contact/"
+                                        target=&quot;_blank&quot; class="">
+
+                                        PRENOTA! </a>
+                                </div>
+
+
+                            </div> <!-- /.zak-header-buttons -->
+
+
+                            <div class="zak-toggle-menu ">
+
+
+                                <button class="zak-menu-toggle" aria-label="Menu principale">
+
+                                    <svg class="zak-icon zakra-icon--bars" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 19H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2Zm0-6H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2Zm0-6H3a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2Z" />
+                                    </svg>
+                                </button> <!-- /.zak-menu-toggle -->
+
+                                <nav id="zak-mobile-nav" class="zak-main-nav zak-mobile-nav">
+
+                                    <div class="zak-mobile-nav__header">
+
+                                        <!-- Mobile nav close icon. -->
+                                        <button id="zak-mobile-nav-close" class="zak-mobile-nav-close"
+                                            aria-label="Pulsante di chiusura">
+                                            <svg class="zak-icon zakra-icon--x-mark" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="m14 12 7.6-7.6c.6-.6.6-1.5 0-2-.6-.6-1.5-.6-2 0L12 10 4.4 2.4c-.6-.6-1.5-.6-2 0s-.6 1.5 0 2L10 12l-7.6 7.6c-.6.6-.6 1.5 0 2 .3.3.6.4 1 .4s.7-.1 1-.4L12 14l7.6 7.6c.3.3.6.4 1 .4s.7-.1 1-.4c.6-.6.6-1.5 0-2L14 12z" />
+                                            </svg> </button>
+                                    </div> <!-- /.zak-mobile-nav__header -->
+
+                                    <ul id="zak-mobile-menu" class="zak-mobile-menu">
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-505 current_page_item menu-item-1613">
+                                            <a href="http://localhost/" aria-current="page">Home</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592">
+                                            <a href="http://localhost/about/">About</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1612">
+                                            <a href="http://localhost/menus/">Menus</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1591">
+                                            <a href="http://localhost/blog/">Blog</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596">
+                                            <a href="http://localhost/gallery/">Gallery</a></li>
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594">
+                                            <a href="http://localhost/contact/">Contact</a></li>
+                                    </ul>
+                                    <div class="zak-mobile-menu-label">
+                                    </div>
+
+
+                                </nav> <!-- /#zak-mobile-nav-->
+
+                            </div> <!-- /.zak-toggle-menu -->
+
+                        </div> <!-- /.zak-header__block-two -->
+
+                    </div> <!-- /.zak-row -->
+                </div> <!-- /.zak-container -->
+            </div> <!-- /.zak-main-header -->
+
+
+        </header><!-- #zak-masthead -->
+
+
+        <div id="zak-content" class="zak-content">
+            <div class="zak-container">
+                <div class="zak-row">
+
+                    <div id="primary" class="zak-primary pagebuilder-content">
+
+
+                        <div class="blockart-section blockart-section-95dfa7b9">
+                            <div class="blockart-overlay"></div>
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-cc13c760">
+                                        <div class="blockart-column-inner"></div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-7164cd44">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex"
+                                                style="padding-top:0px;padding-bottom:0px">
+                                                <figure class="blockart-image blockart-image-d0f9928d"><img
+                                                        fetchpriority="high" decoding="async"
+                                                        class="wp-image-1008 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-1-1-1.png"
+                                                        alt="" height="158" width="693" /></figure>
+
+
+
+                                                <h2 class="blockart-heading blockart-heading-d0813ad6">ZAKRA RESTURA
+                                                </h2>
+
+
+
+                                                <p class="blockart-paragraph blockart-paragraph-06c13fcf">Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Curabitur nisl justo,
+                                                    egestas vel lobortis quis, pharetra aliquet tellus.</p>
+
+
+
+                                                <div
+                                                    class="blockart-buttons blockart-buttons-2576eaa6 is-wrap justify-center align-center">
+                                                    <div class="blockart-button blockart-button-1a3c6395 "><a
+                                                            class="blockart-button-link is-custom is-style-filled"
+                                                            href="#">book a table</a></div>
+                                                </div>
+
+
+
+                                                <figure class="blockart-image blockart-image-43830966"><img
+                                                        decoding="async"
+                                                        class="wp-image-1007 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-2-1.png"
+                                                        alt="" height="91" width="542"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-2-1.png 542w, http://localhost/wp-content/uploads/2024/03/crown-2-1-300x50.png 300w"
+                                                        sizes="(max-width: 542px) 100vw, 542px" /></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-62f024d8">
+                                        <div class="blockart-column-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-7b7d72d2 alignfull">
+                            <div class="blockart-container-fluid">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-2d88bbed">
+                                        <div class="blockart-column-inner">
+                                            <figure class="blockart-image blockart-image-837be2d7"><img decoding="async"
+                                                    class="wp-image-560 hover-effect-static filter-none mask mask-none"
+                                                    src="http://localhost/wp-content/uploads/2024/03/10005.jpg" alt=""
+                                                    height="650" width="975"
+                                                    srcset="http://localhost/wp-content/uploads/2024/03/10005.jpg 975w, http://localhost/wp-content/uploads/2024/03/10005-300x200.jpg 300w, http://localhost/wp-content/uploads/2024/03/10005-768x512.jpg 768w"
+                                                    sizes="(max-width: 975px) 100vw, 975px" /></figure>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-8e10f2f6">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex"
+                                                style="margin-top:0px;margin-bottom:0px;padding-top:35px;padding-right:0;padding-bottom:35px;padding-left:0">
+                                                <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex"
+                                                    style="padding-top:0px;padding-bottom:0px">
+                                                    <figure class="wp-block-image size-full is-resized"><img
+                                                            loading="lazy" decoding="async" width="265" height="72"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10007.png"
+                                                            alt="" class="wp-image-612"
+                                                            style="width:239px;height:auto" /></figure>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-22164462">About us</h2>
+
+
+
+                                                    <figure class="wp-block-image aligncenter size-full is-resized"><a
+                                                            href="http://localhost/wp-content/uploads/2024/03/10008.png"><img
+                                                                loading="lazy" decoding="async" width="205" height="38"
+                                                                src="http://localhost/wp-content/uploads/2024/03/10008.png"
+                                                                alt="" class="wp-image-611"
+                                                                style="width:210px;height:auto" /></a></figure>
+                                                </div>
+
+
+
+                                                <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex"
+                                                    style="padding-right:0;padding-left:0">
+                                                    <p class="blockart-paragraph blockart-paragraph-0ce31a33">Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                                                        placerat sem, non auctor dolor. Curabitur varius rutrum lorem
+                                                        vel lobortis. Nam nisi purus, euismod ut mi a, euismod commodo
+                                                        odio. Proin suscipit leo at dignissim dapibus.</p>
+
+
+
+                                                    <p class="blockart-paragraph blockart-paragraph-1f588786">Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                                                        placerat sem, non auctor dolor. Curabitur varius rutrum lorem
+                                                        vel lobortis. Nam nisi purus, euismod ut mi a, euismod commodo
+                                                        odio. Proin suscipit leo at dignissim dapibus.</p>
+
+
+
+                                                    <div
+                                                        class="blockart-buttons blockart-buttons-5b78abe6 is-wrap justify-center align-center">
+                                                        <div class="blockart-button blockart-button-693f3db9 "><a
+                                                                class="blockart-button-link is-custom is-style-filled"
+                                                                href="https://optimus.qsandbox.com/zqs/qbcj/site/zakra-restaurant/about/">READ
+                                                                MORE</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-a76f8cf6 alignfull">
+                            <div class="blockart-container-fluid">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-0ad47c0f">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex"
+                                                style="margin-top:0px;margin-bottom:0px;padding-top:35px;padding-bottom:35px">
+                                                <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex"
+                                                    style="padding-top:0px;padding-bottom:0px">
+                                                    <figure class="wp-block-image size-full is-resized"><img
+                                                            loading="lazy" decoding="async" width="265" height="72"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10007.png"
+                                                            alt="" class="wp-image-612"
+                                                            style="width:239px;height:auto" /></figure>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-53fbebad">WHY US</h2>
+
+
+
+                                                    <figure class="wp-block-image aligncenter size-full is-resized"><a
+                                                            href="http://localhost/wp-content/uploads/2024/03/10008.png"><img
+                                                                loading="lazy" decoding="async" width="205" height="38"
+                                                                src="http://localhost/wp-content/uploads/2024/03/10008.png"
+                                                                alt="" class="wp-image-611"
+                                                                style="width:210px;height:auto" /></a></figure>
+                                                </div>
+
+
+
+                                                <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex"
+                                                    style="padding-right:0;padding-left:0">
+                                                    <p class="blockart-paragraph blockart-paragraph-a3194421">Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                                                        placerat sem, non auctor dolor. Curabitur varius rutrum lorem
+                                                        vel lobortis. Nam nisi purus, euismod ut mi a, euismod commodo
+                                                        odio. Proin suscipit leo at dignissim dapibus.</p>
+
+
+
+                                                    <p class="blockart-paragraph blockart-paragraph-f04f58c3">Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                                                        placerat sem, non auctor dolor. Curabitur varius rutrum lorem
+                                                        vel lobortis. Nam nisi purus, euismod ut mi a, euismod commodo
+                                                        odio. Proin suscipit leo at dignissim dapibus.</p>
+
+
+
+                                                    <div
+                                                        class="blockart-buttons blockart-buttons-a00a0631 is-wrap justify-center align-center">
+                                                        <div class="blockart-button blockart-button-80d3896c "><a
+                                                                class="blockart-button-link is-custom is-style-filled"
+                                                                href="https://optimus.qsandbox.com/zqs/qbcj/site/zakra-restaurant/about/">READ
+                                                                MORE</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-f05ca0fa">
+                                        <div class="blockart-column-inner">
+                                            <figure class="blockart-image blockart-image-44535486"><img loading="lazy"
+                                                    decoding="async"
+                                                    class="wp-image-559 hover-effect-static filter-none mask mask-none"
+                                                    src="http://localhost/wp-content/uploads/2024/03/10006.jpg" alt=""
+                                                    height="961" width="961"
+                                                    srcset="http://localhost/wp-content/uploads/2024/03/10006.jpg 961w, http://localhost/wp-content/uploads/2024/03/10006-300x300.jpg 300w, http://localhost/wp-content/uploads/2024/03/10006-150x150.jpg 150w, http://localhost/wp-content/uploads/2024/03/10006-768x768.jpg 768w"
+                                                    sizes="(max-width: 961px) 100vw, 961px" /></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-5ede797c alignfull">
+                            <div class="blockart-overlay"></div>
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-b7aa42f9">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-8 wp-block-group-is-layout-flex"
+                                                style="padding-top:100px;padding-bottom:100px">
+                                                <figure class="wp-block-image size-full is-resized"><img loading="lazy"
+                                                        decoding="async" width="693" height="158"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-1.png"
+                                                        alt="" class="wp-image-565" style="width:272px;height:auto"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-1.png 693w, http://localhost/wp-content/uploads/2024/03/crown-1-300x68.png 300w"
+                                                        sizes="(max-width: 693px) 100vw, 693px" /></figure>
+
+
+
+                                                <h2 class="blockart-heading blockart-heading-be8818bf">OUR SPECIALITY
+                                                </h2>
+
+
+
+                                                <figure class="wp-block-image aligncenter size-full is-resized"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/crown-2.png"><img
+                                                            loading="lazy" decoding="async" width="542" height="91"
+                                                            src="http://localhost/wp-content/uploads/2024/03/crown-2.png"
+                                                            alt="" class="wp-image-566" style="width:210px;height:auto"
+                                                            srcset="http://localhost/wp-content/uploads/2024/03/crown-2.png 542w, http://localhost/wp-content/uploads/2024/03/crown-2-300x50.png 300w"
+                                                            sizes="(max-width: 542px) 100vw, 542px" /></a></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="blockart-section blockart-section-242bdd39">
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-a53880dd">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group has-white-background-color has-background is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex"
+                                                style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                                                <figure class="blockart-image blockart-image-d19fece2"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-667 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/10001-1.jpg"
+                                                        alt="" height="202" width="370"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/10001-1.jpg 370w, http://localhost/wp-content/uploads/2024/03/10001-1-300x164.jpg 300w"
+                                                        sizes="(max-width: 370px) 100vw, 370px" /></figure>
+
+
+
+                                                <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex"
+                                                    style="margin-top:0;margin-bottom:0;padding-top:30px;padding-right:20px;padding-bottom:30px;padding-left:20px">
+                                                    <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-9 wp-block-group-is-layout-flex"
+                                                        style="margin-top:0;margin-bottom:0">
+                                                        <h2 class="blockart-heading blockart-heading-e6e72fba">FRENCH
+                                                            FRIES AND SAUSAGES</h2>
+
+
+
+                                                        <h2 class="blockart-heading blockart-heading-5f3c1639">$1200
+                                                        </h2>
+                                                    </div>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-628fa32a">Lorem ipsum
+                                                        dolor sit amet, consectetur adipiscing elit. Duis sed placerat
+                                                        sem, non auctor dolor modo odio.</h2>
+
+
+
+                                                    <div
+                                                        class="blockart-buttons blockart-buttons-14ca12aa is-wrap justify-center align-center">
+                                                        <div class="blockart-button blockart-button-1d7f7c2f "><a
+                                                                class="blockart-button-link is-custom is-style-filled"
+                                                                href="#">VIEW DETAILS</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-d5e6e570">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group has-white-background-color has-background is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex"
+                                                style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                                                <figure class="blockart-image blockart-image-1d575b1b"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-666 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/10002-1.jpg"
+                                                        alt="" height="202" width="370"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/10002-1.jpg 370w, http://localhost/wp-content/uploads/2024/03/10002-1-300x164.jpg 300w"
+                                                        sizes="(max-width: 370px) 100vw, 370px" /></figure>
+
+
+
+                                                <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex"
+                                                    style="margin-top:0;margin-bottom:0;padding-top:30px;padding-right:20px;padding-bottom:30px;padding-left:20px">
+                                                    <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-12 wp-block-group-is-layout-flex"
+                                                        style="margin-top:0;margin-bottom:0">
+                                                        <h2 class="blockart-heading blockart-heading-bedce5e8">FRENCH
+                                                            FRIES AND SAUSAGES</h2>
+
+
+
+                                                        <h2 class="blockart-heading blockart-heading-2a0d451a">$1200
+                                                        </h2>
+                                                    </div>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-22afcc8d">Lorem ipsum
+                                                        dolor sit amet, consectetur adipiscing elit. Duis sed placerat
+                                                        sem, non auctor dolor modo odio.</h2>
+
+
+
+                                                    <div
+                                                        class="blockart-buttons blockart-buttons-dcbb6a51 is-wrap justify-center align-center">
+                                                        <div class="blockart-button blockart-button-99ce9387 "><a
+                                                                class="blockart-button-link is-custom is-style-filled"
+                                                                href="#">VIEW DETAILS</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-aab81b78">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group has-white-background-color has-background is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex"
+                                                style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                                                <figure class="blockart-image blockart-image-b3a8da9c"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-665 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/10003-1.jpg"
+                                                        alt="" height="202" width="370"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/10003-1.jpg 370w, http://localhost/wp-content/uploads/2024/03/10003-1-300x164.jpg 300w"
+                                                        sizes="(max-width: 370px) 100vw, 370px" /></figure>
+
+
+
+                                                <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-16 wp-block-group-is-layout-flex"
+                                                    style="margin-top:0;margin-bottom:0;padding-top:30px;padding-right:20px;padding-bottom:30px;padding-left:20px">
+                                                    <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-15 wp-block-group-is-layout-flex"
+                                                        style="margin-top:0;margin-bottom:0">
+                                                        <h2 class="blockart-heading blockart-heading-90c34eef">FRENCH
+                                                            FRIES AND SAUSAGES</h2>
+
+
+
+                                                        <h2 class="blockart-heading blockart-heading-c6ffa55f">$1200
+                                                        </h2>
+                                                    </div>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-61337af2">Lorem ipsum
+                                                        dolor sit amet, consectetur adipiscing elit. Duis sed placerat
+                                                        sem, non auctor dolor modo odio.</h2>
+
+
+
+                                                    <div
+                                                        class="blockart-buttons blockart-buttons-4f06a3bf is-wrap justify-center align-center">
+                                                        <div class="blockart-button blockart-button-e3d12202 "><a
+                                                                class="blockart-button-link is-custom is-style-filled"
+                                                                href="#">VIEW DETAILS</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-4ffd78bb alignfull">
+                            <div class="blockart-container-fluid">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-83c6cb37">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex"
+                                                style="padding-top:24px;padding-bottom:24px">
+                                                <figure class="blockart-image blockart-image-9eb85344"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-612 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/10007.png"
+                                                        alt="" height="72" width="265" /></figure>
+
+
+
+                                                <h2 class="blockart-heading blockart-heading-4537b929">MENU</h2>
+
+
+
+                                                <figure class="blockart-image blockart-image-ce86bc67"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-611 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/10008.png"
+                                                        alt="" height="38" width="205" /></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-209931f0">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-spacing blockart-spacing-bf60cc42">
+                                                <div class="blockart-spacing-inner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-57449c4d">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-c3e6e05a">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-d5ed6a00">
+                                                            <div class="blockart-column-inner">
+                                                                <h2 class="blockart-heading blockart-heading-598181a4">
+                                                                    BREAKFAST</h2>
+
+
+
+                                                                <div class="blockart-section blockart-section-31876e59">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-3816bc07">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-fc09ae7b">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-754 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/breakfast-blackpasta.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-3b054bbd">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-19 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-fc63f1f5">
+                                                                                            Black Pasta</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-36208328">
+                                                                                            $110</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-71536f89">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-76dce62e">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-7090072e">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-d924c17e">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-855 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10001-2.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-a4251363">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-20 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-472bbd94">
+                                                                                            Strawberry Waffle</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-103bc6ba">
+                                                                                            $120</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-68f0f5ca">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-4b5fbb92">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-a8c3c412">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-0aec69dd">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-854 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10002-2.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-bdbaff27">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-21 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-ba82f50f">
+                                                                                            Avocado and Egg Toast</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-61182fc1">
+                                                                                            $155</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-c7a2036e">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-e879d5aa">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-55a39fe3">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-f7447d1b">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-853 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10003-2.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-952ba2c1">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-22 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-9e184fc1">
+                                                                                            Blueberry pie</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-25ef7e88">
+                                                                                            $125</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-bf754e84">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-eca15bdb alignfull">
+                            <div class="blockart-container-fluid">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-94a81f68">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-982d8bb8">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-f19b1962">
+                                                            <div class="blockart-column-inner">
+                                                                <h2 class="blockart-heading blockart-heading-2f17903e">
+                                                                    LUNCH</h2>
+
+
+
+                                                                <div class="blockart-section blockart-section-9330f3d3">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-fae704c4">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-a592a4cb">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-852 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10004-1.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-574186da">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-23 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-dbde76eb">
+                                                                                            Veg Patty Burger</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-a10cf4f4">
+                                                                                            $120</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-d18ccfa1">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-394ea3bb">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-58b2ea5d">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-4c9c7959">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-851 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10005-1.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-66219df7">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-24 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-8a84832a">
+                                                                                            Veg Lunch Box</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-40375065">
+                                                                                            $110</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-092ddd69">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-9289a5ac">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-6dfe945f">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-96814c41">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-850 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10006-1.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-da201d7e">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-25 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-b5f2dcbc">
+                                                                                            Peanut Butter &amp; Cherry
+                                                                                        </h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-faed8f9d">
+                                                                                            $100</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-49bc60c2">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                <div class="blockart-section blockart-section-3b02c8ec">
+                                                                    <div class="blockart-container">
+                                                                        <div class="blockart-section-inner">
+                                                                            <div
+                                                                                class="blockart-column blockart-column-aa04fcf9">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <figure
+                                                                                        class="blockart-image blockart-image-e221e655">
+                                                                                        <img loading="lazy"
+                                                                                            decoding="async"
+                                                                                            class="wp-image-849 hover-effect-static filter-none mask mask-none"
+                                                                                            src="http://localhost/wp-content/uploads/2024/03/10007.jpg"
+                                                                                            alt="" height="82"
+                                                                                            width="82" /></figure>
+                                                                                </div>
+                                                                            </div>
+
+
+
+                                                                            <div
+                                                                                class="blockart-column blockart-column-a7c3bea3">
+                                                                                <div class="blockart-column-inner">
+                                                                                    <div
+                                                                                        class="wp-block-group is-horizontal is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-26 wp-block-group-is-layout-flex">
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-c996ecd9">
+                                                                                            Crazy Ribbon Fish Spicy</h2>
+
+
+
+                                                                                        <h2
+                                                                                            class="blockart-heading blockart-heading-d9c8a6f9">
+                                                                                            $160</h2>
+                                                                                    </div>
+
+
+
+                                                                                    <hr class="wp-block-separator has-text-color has-black-color has-alpha-channel-opacity has-black-background-color has-background is-style-wide"
+                                                                                        style="margin-top:0.8rem;margin-bottom:0.8rem" />
+
+
+
+                                                                                    <h2
+                                                                                        class="blockart-heading blockart-heading-44d46e9b">
+                                                                                        <em>Jalapeños, bell pepper,
+                                                                                            mushroom &amp;
+                                                                                            coriander.</em></h2>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-f83e22b5">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-spacing blockart-spacing-74f9dfd1">
+                                                <div class="blockart-spacing-inner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="blockart-section blockart-section-6a0c4bec">
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-30a5ad5e">
+                                        <div class="blockart-column-inner">
+                                            <div
+                                                class="blockart-buttons blockart-buttons-7d1da429 is-wrap justify-center align-center">
+                                                <div class="blockart-button blockart-button-b0831c3f "><a
+                                                        class="blockart-button-link is-custom is-style-filled"
+                                                        href="https://optimus.qsandbox.com/zqs/qbcj/site/zakra-restaurant/menus/">view
+                                                        all</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-47dd9f9c alignfull">
+                            <div class="blockart-overlay"></div>
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-ad7a1afb">
+                                        <div class="blockart-column-inner">
+                                            <div
+                                                class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-27 wp-block-group-is-layout-flex">
+                                                <figure class="blockart-image blockart-image-61f5b806"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-565 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-1.png"
+                                                        alt="" height="158" width="693"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-1.png 693w, http://localhost/wp-content/uploads/2024/03/crown-1-300x68.png 300w"
+                                                        sizes="(max-width: 693px) 100vw, 693px" /></figure>
+
+
+
+                                                <h2 class="blockart-heading blockart-heading-db3c50c1">TESTIMONIAL</h2>
+
+
+
+                                                <figure class="blockart-image blockart-image-288f04cb"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-566 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-2.png"
+                                                        alt="" height="91" width="542"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-2.png 542w, http://localhost/wp-content/uploads/2024/03/crown-2-300x50.png 300w"
+                                                        sizes="(max-width: 542px) 100vw, 542px" /></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="blockart-section blockart-section-75e2bab7">
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-55a4b95a">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-20601996">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-8ecccade">
+                                                            <div class="blockart-column-inner">
+                                                                <figure class="blockart-image blockart-image-56021ee4">
+                                                                    <img loading="lazy" decoding="async"
+                                                                        class="wp-image-848 hover-effect-static filter-none mask mask-none"
+                                                                        src="http://localhost/wp-content/uploads/2024/03/10008.jpg"
+                                                                        alt="" height="90" width="90" /></figure>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="blockart-section blockart-section-280bef7e">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-6b7735d3">
+                                                            <div class="blockart-column-inner">
+                                                                <div
+                                                                    class="blockart-icon-block blockart-icon-82f29083 blockart-center">
+                                                                    <a class="blockart-outside-icon blockart-icon-link"><span
+                                                                            class="blockart-icon-wrapper"><svg
+                                                                                width="24" height="24"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                class="blockart-icon"
+                                                                                aria-hidden="true">
+                                                                                <path
+                                                                                    d="M3.6 6.3C5 4.8 7.2 4 10 4h1v2.8l-.8.2c-1.4.2-2.3.8-2.8 1.6-.4.4-.5 1-.5 1.4h3c.5 0 1 .4 1 1v7c0 1.1-.9 2-2 2H3c-.5 0-1-.4-1-1v-8s-.2-2.7 1.6-4.7zM20 20h-6c-.5 0-1-.4-1-1v-7.9c0-.1-.2-2.8 1.7-4.8C16.1 4.8 18.3 4 21.1 4h1v2.7l-.9.3c-1.4.3-2.3.8-2.9 1.6-.3.5-.4 1-.4 1.4h3c.5 0 1 .4 1 1v7c.1 1.1-.8 2-1.9 2z">
+                                                                                </path>
+                                                                            </svg></span></a></div>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-3aa3e908">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elit. Nunc id elit vitae lacus porttitor eleifend.
+                                                                    cursus accumsan mollis.</p>
+
+
+
+                                                                <h4 class="blockart-heading blockart-heading-f91196d8">
+                                                                    <strong>GEORGE CLOONEY</strong></h4>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-1baa3f36">
+                                                                    CEO, XYZ Company</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-7cadc206">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-cc336864">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-fa1a9f0e">
+                                                            <div class="blockart-column-inner">
+                                                                <figure class="blockart-image blockart-image-9132c5f4">
+                                                                    <img loading="lazy" decoding="async"
+                                                                        class="wp-image-847 hover-effect-static filter-none mask mask-none"
+                                                                        src="http://localhost/wp-content/uploads/2024/03/10009.jpg"
+                                                                        alt="" height="90" width="90" /></figure>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="blockart-section blockart-section-fcb95aa8">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-608ef978">
+                                                            <div class="blockart-column-inner">
+                                                                <div
+                                                                    class="blockart-icon-block blockart-icon-e0703879 blockart-center">
+                                                                    <a class="blockart-outside-icon blockart-icon-link"><span
+                                                                            class="blockart-icon-wrapper"><svg
+                                                                                width="24" height="24"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                class="blockart-icon"
+                                                                                aria-hidden="true">
+                                                                                <path
+                                                                                    d="M3.6 6.3C5 4.8 7.2 4 10 4h1v2.8l-.8.2c-1.4.2-2.3.8-2.8 1.6-.4.4-.5 1-.5 1.4h3c.5 0 1 .4 1 1v7c0 1.1-.9 2-2 2H3c-.5 0-1-.4-1-1v-8s-.2-2.7 1.6-4.7zM20 20h-6c-.5 0-1-.4-1-1v-7.9c0-.1-.2-2.8 1.7-4.8C16.1 4.8 18.3 4 21.1 4h1v2.7l-.9.3c-1.4.3-2.3.8-2.9 1.6-.3.5-.4 1-.4 1.4h3c.5 0 1 .4 1 1v7c.1 1.1-.8 2-1.9 2z">
+                                                                                </path>
+                                                                            </svg></span></a></div>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-0fb20656">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elit. Nunc id elit vitae lacus porttitor eleifend.
+                                                                    cursus accumsan mollis.</p>
+
+
+
+                                                                <h4 class="blockart-heading blockart-heading-3aa3d813">
+                                                                    <strong><strong>RIYA PRAKASH</strong></strong></h4>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-8bbb6b34">
+                                                                    CEO, ABC Company</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-f3e5492a">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-ae6130e5">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-5eb71360">
+                                                            <div class="blockart-column-inner">
+                                                                <figure class="blockart-image blockart-image-c1e9d095">
+                                                                    <img loading="lazy" decoding="async"
+                                                                        class="wp-image-846 hover-effect-static filter-none mask mask-none"
+                                                                        src="http://localhost/wp-content/uploads/2024/03/10010.jpg"
+                                                                        alt="" height="90" width="90" /></figure>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="blockart-section blockart-section-52b03dcf">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-2c32f95f">
+                                                            <div class="blockart-column-inner">
+                                                                <div
+                                                                    class="blockart-icon-block blockart-icon-7a86691d blockart-center">
+                                                                    <a class="blockart-outside-icon blockart-icon-link"><span
+                                                                            class="blockart-icon-wrapper"><svg
+                                                                                width="24" height="24"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                viewBox="0 0 24 24"
+                                                                                class="blockart-icon"
+                                                                                aria-hidden="true">
+                                                                                <path
+                                                                                    d="M3.6 6.3C5 4.8 7.2 4 10 4h1v2.8l-.8.2c-1.4.2-2.3.8-2.8 1.6-.4.4-.5 1-.5 1.4h3c.5 0 1 .4 1 1v7c0 1.1-.9 2-2 2H3c-.5 0-1-.4-1-1v-8s-.2-2.7 1.6-4.7zM20 20h-6c-.5 0-1-.4-1-1v-7.9c0-.1-.2-2.8 1.7-4.8C16.1 4.8 18.3 4 21.1 4h1v2.7l-.9.3c-1.4.3-2.3.8-2.9 1.6-.3.5-.4 1-.4 1.4h3c.5 0 1 .4 1 1v7c.1 1.1-.8 2-1.9 2z">
+                                                                                </path>
+                                                                            </svg></span></a></div>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-1a649901">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elit. Nunc id elit vitae lacus porttitor eleifend.
+                                                                    cursus accumsan mollis.</p>
+
+
+
+                                                                <h4 class="blockart-heading blockart-heading-5fc62ea1">
+                                                                    <strong><strong>MICHAEL PIOS</strong></strong></h4>
+
+
+
+                                                                <p
+                                                                    class="blockart-paragraph blockart-paragraph-ca5996de">
+                                                                    CEO, XYZ Factory</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-4c55c3f3 alignfull">
+                            <div class="blockart-container-fluid">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-651f6c3b">
+                                        <div class="blockart-column-inner">
+                                            <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-29 wp-block-group-is-layout-flex"
+                                                style="margin-top:0px;margin-bottom:0px;padding-top:80px;padding-bottom:60px">
+                                                <div class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-28 wp-block-group-is-layout-flex"
+                                                    style="padding-top:0px;padding-bottom:0px">
+                                                    <figure class="blockart-image blockart-image-1984e4c8"><img
+                                                            loading="lazy" decoding="async"
+                                                            class="wp-image-612 hover-effect-static filter-none mask mask-none"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10007.png"
+                                                            alt="" height="72" width="265" /></figure>
+
+
+
+                                                    <h2 class="blockart-heading blockart-heading-82da244d">GALLERY</h2>
+
+
+
+                                                    <figure class="blockart-image blockart-image-5873e0e6"><img
+                                                            loading="lazy" decoding="async"
+                                                            class="wp-image-611 hover-effect-static filter-none mask mask-none"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10008.png"
+                                                            alt="" height="38" width="205" /></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-0710bb12">
+                                        <div class="blockart-column-inner">
+                                            <figure
+                                                class="wp-block-gallery has-nested-images columns-4 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10001-3.jpg"><img
+                                                            loading="lazy" decoding="async" width="480" height="354"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10001-3.jpg"
+                                                            alt="" class="wp-image-985"
+                                                            srcset="http://localhost/wp-content/uploads/2024/03/10001-3.jpg 480w, http://localhost/wp-content/uploads/2024/03/10001-3-300x221.jpg 300w"
+                                                            sizes="(max-width: 480px) 100vw, 480px" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10002-3-1.jpg"><img
+                                                            decoding="async"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10002-3-1.jpg"
+                                                            alt="" class="wp-image-992" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10003-3-1.jpg"><img
+                                                            decoding="async"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10003-3-1.jpg"
+                                                            alt="" class="wp-image-991" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10004-2-1.jpg"><img
+                                                            decoding="async"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10004-2-1.jpg"
+                                                            alt="" class="wp-image-990" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10005-2-1.jpg"><img
+                                                            decoding="async"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10005-2-1.jpg"
+                                                            alt="" class="wp-image-989" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10006-2.jpg"><img
+                                                            loading="lazy" decoding="async" width="480" height="354"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10006-2.jpg"
+                                                            alt="" class="wp-image-988"
+                                                            srcset="http://localhost/wp-content/uploads/2024/03/10006-2.jpg 480w, http://localhost/wp-content/uploads/2024/03/10006-2-300x221.jpg 300w"
+                                                            sizes="(max-width: 480px) 100vw, 480px" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10007-1.jpg"><img
+                                                            loading="lazy" decoding="async" width="480" height="354"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10007-1.jpg"
+                                                            alt="" class="wp-image-987"
+                                                            srcset="http://localhost/wp-content/uploads/2024/03/10007-1.jpg 480w, http://localhost/wp-content/uploads/2024/03/10007-1-300x221.jpg 300w"
+                                                            sizes="(max-width: 480px) 100vw, 480px" /></a></figure>
+
+
+
+                                                <figure class="wp-block-image size-full"><a
+                                                        href="http://localhost/wp-content/uploads/2024/03/10008-1.jpg"><img
+                                                            loading="lazy" decoding="async" width="480" height="354"
+                                                            src="http://localhost/wp-content/uploads/2024/03/10008-1.jpg"
+                                                            alt="" class="wp-image-986"
+                                                            srcset="http://localhost/wp-content/uploads/2024/03/10008-1.jpg 480w, http://localhost/wp-content/uploads/2024/03/10008-1-300x221.jpg 300w"
+                                                            sizes="(max-width: 480px) 100vw, 480px" /></a></figure>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="blockart-column blockart-column-03e8eefa">
+                                        <div class="blockart-column-inner">
+                                            <div
+                                                class="blockart-buttons blockart-buttons-29b342a7 is-wrap justify-center align-center">
+                                                <div class="blockart-button blockart-button-b294767c "><a
+                                                        class="blockart-button-link is-custom is-style-filled"
+                                                        href="https://optimus.qsandbox.com/zqs/qbcj/site/zakra-restaurant/gallery/">view
+                                                        all</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="alignfull blockart-section blockart-section-7fb86ff1 alignfull">
+                            <div class="blockart-overlay"></div>
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-49f97856">
+                                        <div class="blockart-column-inner">
+                                            <div
+                                                class="wp-block-group is-vertical is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-30 wp-block-group-is-layout-flex">
+                                                <figure class="blockart-image blockart-image-77d6a094"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-565 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-1.png"
+                                                        alt="" height="158" width="693"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-1.png 693w, http://localhost/wp-content/uploads/2024/03/crown-1-300x68.png 300w"
+                                                        sizes="(max-width: 693px) 100vw, 693px" /></figure>
+
+
+
+                                                <h2 class="blockart-heading blockart-heading-1769208c">SUBSCRIPTION</h2>
+
+
+
+                                                <figure class="blockart-image blockart-image-7c276443"><img
+                                                        loading="lazy" decoding="async"
+                                                        class="wp-image-566 hover-effect-static filter-none mask mask-none"
+                                                        src="http://localhost/wp-content/uploads/2024/03/crown-2.png"
+                                                        alt="" height="91" width="542"
+                                                        srcset="http://localhost/wp-content/uploads/2024/03/crown-2.png 542w, http://localhost/wp-content/uploads/2024/03/crown-2-300x50.png 300w"
+                                                        sizes="(max-width: 542px) 100vw, 542px" /></figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="blockart-section blockart-section-8d75fe31">
+                            <div class="blockart-container">
+                                <div class="blockart-section-inner">
+                                    <div class="blockart-column blockart-column-c1a87ca5">
+                                        <div class="blockart-column-inner">
+                                            <div class="blockart-section blockart-section-54f25b60">
+                                                <div class="blockart-container">
+                                                    <div class="blockart-section-inner">
+                                                        <div class="blockart-column blockart-column-0080ee7c">
+                                                            <div class="blockart-column-inner">
+                                                                <h2 class="blockart-heading blockart-heading-d65b66eb">
+                                                                    Want to receive regular news and updates to your
+                                                                    inbox?</h2>
+
+
+                                                                <div class="everest-forms">
+                                                                    <div class="evf-container default" id="evf-399">
+                                                                        <form id="evf-form-399" class="everest-form"
+                                                                            data-formid="399" data-ajax_submission="0"
+                                                                            data-keyboard_friendly_form="0"
+                                                                            method="post" enctype="multipart/form-data"
+                                                                            action="/">
+                                                                            <div class="evf-field-container"><input
+                                                                                    type="hidden" id="_wpnonce399"
+                                                                                    name="_wpnonce399"
+                                                                                    value="42a1c43c9e" /><input
+                                                                                    type="hidden"
+                                                                                    name="_wp_http_referer" value="/" />
+                                                                                <div class="evf-frontend-row"
+                                                                                    data-row="row_1"
+                                                                                    conditional_rules="[]">
+                                                                                    <div class="evf-frontend-grid evf-grid-2"
+                                                                                        data-grid="grid_1">
+                                                                                        <div id="evf-399-field_pMcTQbksiV-1-container"
+                                                                                            class="evf-field evf-field-email form-row validate-required validate-email"
+                                                                                            data-required-field-message="Please enter a valid email address."
+                                                                                            data-field-id="pMcTQbksiV-1">
+                                                                                            <label
+                                                                                                class="evf-field-label evf-label-hide"
+                                                                                                for="evf-399-field_pMcTQbksiV-1"><span
+                                                                                                    class="evf-label">Email</span>
+                                                                                                <abbr class="required"
+                                                                                                    title="Required">*</abbr></label><input
+                                                                                                type="email"
+                                                                                                id="evf-399-field_pMcTQbksiV-1"
+                                                                                                class="input-text"
+                                                                                                name="everest_forms[form_fields][pMcTQbksiV-1]"
+                                                                                                placeholder="Your Email"
+                                                                                                required></div>
+                                                                                    </div>
+                                                                                    <div class="evf-frontend-grid evf-grid-2"
+                                                                                        data-grid="grid_2"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                class="evf-honeypot-container evf-field-hp">
+                                                                                <label for="evf-399-field-hp"
+                                                                                    class="evf-field-label">Phone</label><input
+                                                                                    type="text" name="everest_forms[hp]"
+                                                                                    id="evf-399-field-hp"
+                                                                                    class="input-text"></div>
+                                                                            <div class="evf-submit-container "><input
+                                                                                    type="hidden"
+                                                                                    name="everest_forms[id]"
+                                                                                    value="399"><input type="hidden"
+                                                                                    name="everest_forms[author]"
+                                                                                    value="1"><input type="hidden"
+                                                                                    name="everest_forms[post_id]"
+                                                                                    value="505"><button type='submit'
+                                                                                    name='everest_forms[submit]'
+                                                                                    class='everest-forms-submit-button button evf-submit '
+                                                                                    id='evf-submit-399'
+                                                                                    value='evf-submit'
+                                                                                    data-process-text="Processing…"
+                                                                                    conditional_rules='&quot;&quot;'
+                                                                                    conditional_id='evf-submit-399'
+                                                                                    id="evf-submit-399"
+                                                                                    aria-live="assertive">Sign
+                                                                                    up</button></div>
+                                                                        </form>
+                                                                    </div><!-- .evf-container -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- zak-primary -->
+
+
+                </div> <!-- /.row -->
+            </div> <!-- /.zak-container-->
+        </div> <!-- /#zak-content-->
+
+        <footer id="zak-footer" class="zak-footer ">
+
+
+            <div class="zak-footer-cols zak-layout-1 zak-layout-1-style-3">
+                <div class="zak-container">
+                    <div class="zak-row">
+
+
+                        <div class="zak-footer-col zak-footer-col--1">
+                            <section id="block-13" class="widget widget_block">
+                                <figure class="blockart-image blockart-image-5e4ecf14"><img loading="lazy"
+                                        decoding="async"
+                                        class="wp-image-556 hover-effect-static filter-none mask mask-none"
+                                        src="https://optimus.qsandbox.com/zqs/qbcj/site/zakra-restaurant/wp-content/uploads/2024/03/footer-logo.png"
+                                        alt="" height="56" width="160" /></figure>
+                            </section>
+                            <section id="block-14" class="widget widget_block">
+                                <p class="blockart-paragraph blockart-paragraph-7b1f1238">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Nunc id elit vitae lacus porttitor eleifend. Phasellus
+                                    nec mi vitae augue consequat posuere.</p>
+                            </section>
+                            <section id="block-15" class="widget widget_block">
+                                <p class="blockart-paragraph blockart-paragraph-7d8306ee">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Nunc id elit vitae lacus porttitor eleifend.</p>
+                            </section>
+                        </div>
+                        <div class="zak-footer-col zak-footer-col--2">
+                            <section id="nav_menu-2" class="widget widget_nav_menu">
+                                <h2 class="widget-title s">Quick Links</h2>
+                                <div class="menu-quick-links-container">
+                                    <ul id="menu-quick-links" class="menu">
+                                        <li id="menu-item-1598"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-505 current_page_item menu-item-1598">
+                                            <a href="http://localhost/" aria-current="page">Home</a></li>
+                                        <li id="menu-item-1601"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-505 current_page_item menu-item-1601">
+                                            <a href="http://localhost/" aria-current="page">Home</a></li>
+                                        <li id="menu-item-1603"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603">
+                                            <a href="http://localhost/about/">About</a></li>
+                                        <li id="menu-item-1604"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604">
+                                            <a href="http://localhost/about/">About</a></li>
+                                        <li id="menu-item-1605"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605">
+                                            <a href="http://localhost/menus/">Menus</a></li>
+                                        <li id="menu-item-1607"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607">
+                                            <a href="http://localhost/menus/">Menus</a></li>
+                                        <li id="menu-item-1600"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1600">
+                                            <a href="http://localhost/blog/">Blog</a></li>
+                                        <li id="menu-item-1602"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602">
+                                            <a href="http://localhost/blog/">Blog</a></li>
+                                        <li id="menu-item-1606"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1606">
+                                            <a href="http://localhost/gallery/">Gallery</a></li>
+                                        <li id="menu-item-1609"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1609">
+                                            <a href="http://localhost/gallery/">Gallery</a></li>
+                                        <li id="menu-item-1608"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608">
+                                            <a href="http://localhost/contact/">Contact</a></li>
+                                        <li id="menu-item-1610"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1610">
+                                            <a href="http://localhost/contact/">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="zak-footer-col zak-footer-col--3">
+                            <section id="block-16" class="widget widget_block">
+                                <div
+                                    class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-is-layout-32 wp-block-group-is-layout-flex">
+                                    <h2 class="wp-block-heading has-white-color has-text-color has-link-color wp-elements-30e25d7d1ac3a54ff2c44a935d1dc758"
+                                        style="font-size:1.6rem;font-style:normal;font-weight:600">Contact</h2>
+
+
+
+                                    <div class="wp-block-group is-vertical is-nowrap is-layout-flex wp-container-core-group-is-layout-31 wp-block-group-is-layout-flex"
+                                        style="font-size:14px;font-style:normal;font-weight:400">
+                                        <div class="blockart-buttons blockart-buttons-ccdfd9f6 is-wrap">
+                                            <div class="blockart-button blockart-button-19f72abf "><a
+                                                    class="blockart-button-link is-large is-style-plain"><span
+                                                        class="blockart-button-icon"><svg width="24" height="24"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            class="blockart-icon" aria-hidden="true">
+                                                            <path
+                                                                d="M12 13.7c1.9 0 3.5-1.6 3.5-3.5S13.9 6.8 12 6.8s-3.5 1.6-3.5 3.5 1.6 3.4 3.5 3.4zm0-5.2c1 0 1.7.8 1.7 1.7S13 12 12 12s-1.7-.8-1.7-1.7.7-1.8 1.7-1.8z">
+                                                            </path>
+                                                            <path
+                                                                d="M11.4 21.9c.2.1.3.2.6.2s.4-.1.6-.2c.3-.2 7.5-5.4 7.4-11.9 0-4.5-3.6-8-8-8s-8 3.6-8 8c0 6.5 7.1 11.6 7.4 11.9zM12 4c3.3 0 6 2.7 6 6 0 4.5-4.4 8.5-6 9.8-1.7-1.3-6-5.3-6-9.8 0-3.3 2.7-6 6-6z">
+                                                            </path>
+                                                        </svg></span>445 Mount Eden Road, Mt Eden, Bashundhara</a></div>
+                                        </div>
+
+
+
+                                        <div class="blockart-buttons blockart-buttons-2544fbd8 is-wrap">
+                                            <div class="blockart-button blockart-button-f078ed26 "><a
+                                                    class="blockart-button-link is-large is-style-plain"><span
+                                                        class="blockart-button-icon"><svg width="24" height="24"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            class="blockart-icon" aria-hidden="true">
+                                                            <path
+                                                                d="M21.9 17.9l-5.5-5.5-2.3 2.3c-.8-.3-2.2-.8-3-1.6s-1.4-2.3-1.6-3l2.3-2.3-5.7-5.7-3.4 3.4c-.5.5-.6 1-.6 1.5 0 1.5.4 6.5 4.4 10.5s9.1 4.4 10.5 4.4c.5 0 1-.2 1.5-.6l3.4-3.4zm-4.9 2c-1.3 0-5.6-.3-9.1-3.8S4.1 8.2 4.1 7l2.1-2.1 2.7 2.7-1.4 1.3c-.3.3-.3.6-.3 1 0 .1.6 2.9 2.3 4.6s4.5 2.3 4.6 2.3c.3.1.7 0 1-.3l1.3-1.3 2.7 2.7-2.1 2z">
+                                                            </path>
+                                                        </svg></span>977 -111-222-3334</a></div>
+                                        </div>
+
+
+
+                                        <div class="blockart-buttons blockart-buttons-49a17d66 is-wrap">
+                                            <div class="blockart-button blockart-button-369d09ef "><a
+                                                    class="blockart-button-link is-large is-style-plain"><span
+                                                        class="blockart-button-icon"><svg width="24" height="24"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            class="blockart-icon" aria-hidden="true">
+                                                            <path
+                                                                d="M21.5 4.2h-19c-.3 0-.5.2-.5.4v14.7c0 .2.2.4.4.4h19c.2 0 .4-.2.4-.4V4.6c.2-.2 0-.4-.3-.4zm-1.5 2v.5l-8 6-8-6v-.5h16zM4 17.8V9.1l7.4 5.6c.2.2.4.2.6.2s.4-.1.6-.2L20 9.1v8.7H4z">
+                                                            </path>
+                                                        </svg></span><a
+                                                        href="mailto:info@zakraresturant@gmail.com">info@zakraresturant@gmail.com</a></a>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="blockart-buttons blockart-buttons-789445c8 is-wrap">
+                                            <div class="blockart-button blockart-button-55846db8 "><a
+                                                    class="blockart-button-link is-large is-style-plain"><span
+                                                        class="blockart-button-icon"><svg width="24" height="24"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                            class="blockart-icon" aria-hidden="true">
+                                                            <path d="M2 5h10v2H2V5zm0 6h20v2H2v-2zm10 6h10v2H12v-2z">
+                                                            </path>
+                                                        </svg></span>977 - 111-222-3334</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div> <!-- /.zak-row-->
+                </div><!-- /.zak-container-->
+            </div><!-- /.zak-site-footer-widgets -->
+
+
+            <div class="zak-footer-bar zak-style-2">
+                <div class="zak-container">
+                    <div class="zak-row">
+                        <div class="zak-footer-bar__1">
+
+                            <p>Copyright © 2024 <a title="ZAKRA" href="https://zakrademos.com/restaurant/">Zakra
+                                    Restura</a>. Theme: <a title="Zakra" href="https://themegrill.com/themes/zakra"
+                                    target="_blank" rel="author noopener">Zakra</a> By ThemeGrill.</p>
+                        </div> <!-- /.zak-footer-bar__1 -->
+
+                    </div> <!-- /.zak-row-->
+                </div> <!-- /.zak-container-->
+            </div> <!-- /.zak-site-footer-bar -->
+
+        </footer><!-- #zak-footer -->
+
+    </div><!-- #page -->
+
+    <a href="#" id="zak-scroll-to-top" class="zak-scroll-to-top">
+
+        <svg class="zak-icon zakra-icon--chevron-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M21 17.5c-.3 0-.5-.1-.7-.3L12 8.9l-8.3 8.3c-.4.4-1 .4-1.4 0s-.4-1 0-1.4l9-9c.4-.4 1-.4 1.4 0l9 9c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z" />
+        </svg> <span class="screen-reader-text">Torna su</span>
+
+
+    </a>
+
+    <div class="zak-overlay-wrapper"></div>
+
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/everest-forms-no-js/, 'everest-forms-js');
+        document.body.className = c;
+    </script>
+    <style id='core-block-supports-inline-css' type='text/css'>
+        .wp-container-core-group-is-layout-1.wp-container-core-group-is-layout-1 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--50);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-2.wp-container-core-group-is-layout-2 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-3.wp-container-core-group-is-layout-3 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--70);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-4.wp-container-core-group-is-layout-4 {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-5.wp-container-core-group-is-layout-5 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-6.wp-container-core-group-is-layout-6 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--60);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-7.wp-container-core-group-is-layout-7 {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-8.wp-container-core-group-is-layout-8 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-9.wp-container-core-group-is-layout-9 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-10.wp-container-core-group-is-layout-10 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--50);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-11.wp-container-core-group-is-layout-11 {
+            gap: 0;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .wp-container-core-group-is-layout-12.wp-container-core-group-is-layout-12 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-13.wp-container-core-group-is-layout-13 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--50);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-14.wp-container-core-group-is-layout-14 {
+            gap: 0;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .wp-container-core-group-is-layout-15.wp-container-core-group-is-layout-15 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-16.wp-container-core-group-is-layout-16 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--50);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-17.wp-container-core-group-is-layout-17 {
+            gap: 0;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .wp-container-core-group-is-layout-18.wp-container-core-group-is-layout-18 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-19.wp-container-core-group-is-layout-19 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-20.wp-container-core-group-is-layout-20 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-21.wp-container-core-group-is-layout-21 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-22.wp-container-core-group-is-layout-22 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-23.wp-container-core-group-is-layout-23 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-24.wp-container-core-group-is-layout-24 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-25.wp-container-core-group-is-layout-25 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-26.wp-container-core-group-is-layout-26 {
+            justify-content: space-between;
+        }
+
+        .wp-container-core-group-is-layout-27.wp-container-core-group-is-layout-27 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-28.wp-container-core-group-is-layout-28 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-container-core-group-is-layout-29.wp-container-core-group-is-layout-29 {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-block-gallery.wp-block-gallery-1 {
+            --wp--style--unstable-gallery-gap: 0px;
+            gap: 0;
+        }
+
+        .wp-container-core-group-is-layout-30.wp-container-core-group-is-layout-30 {
+            flex-wrap: nowrap;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wp-elements-30e25d7d1ac3a54ff2c44a935d1dc758 a:where(:not(.wp-element-button)) {
+            color: var(--wp--preset--color--white);
+        }
+
+        .wp-container-core-group-is-layout-31.wp-container-core-group-is-layout-31 {
+            flex-wrap: nowrap;
+            gap: var(--wp--preset--spacing--30);
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .wp-container-core-group-is-layout-32.wp-container-core-group-is-layout-32 {
+            gap: 0;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    </style>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/hoverintent-js.min.js?ver=2.2.1"
+        id="hoverintent-js-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/admin-bar.min.js?ver=6.5.5"
+        id="admin-bar-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-content/themes/zakra/assets/js/navigation.min.js?ver=3.0.18"
+        id="zakra-navigation-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/themes/zakra/assets/js/skip-link-focus-fix.min.js?ver=3.0.18"
+        id="zakra-skip-link-focus-fix-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/themes/zakra/assets/js/zakra-custom.min.js?ver=3.0.18"
+        id="zakra-custom-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/blockart-blocks/dist/frontend-utils.js?ver=2.1.9"
+        id="blockart-frontend-utils-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-content/plugins/blockart-blocks/dist/common.js?ver=2.1.9"
+        id="blockart-frontend-common-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+        id="jquery-core-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+        id="jquery-migrate-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/inputmask/jquery.inputmask.bundle.min.js?ver=4.0.0-beta.58"
+        id="inputmask-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/jquery-validate/jquery.validate.min.js?ver=1.19.2"
+        id="jquery-validate-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/intlTelInput/jquery.intlTelInput.min.js%20?ver=16.0.7"
+        id="jquery-intl-tel-input-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.8"
+        id="selectWoo-js"></script>
+    <script type="text/javascript" id="everest-forms-js-extra">
+        /* <![CDATA[ */
+        var everest_forms_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "submit": "Submit", "disable_user_details": "no", "everest_forms_data_save": "6a0fa5ea15", "everest_forms_slot_booking": "549cc1ad65", "i18n_messages_required": "This field is required.", "i18n_messages_url": "Please enter a valid URL.", "i18n_messages_email": "Please enter a valid email address.", "i18n_messages_email_suggestion": "Did you mean {suggestion}?", "i18n_messages_email_suggestion_title": "Click to accept this suggestion.", "i18n_messages_confirm": "Field values do not match.", "i18n_messages_check_limit": "You have exceeded number of allowed selections: {#}.", "i18n_messages_number": "Please enter a valid number.", "i18n_no_matches": "No matches found", "mailcheck_enabled": "1", "mailcheck_domains": [], "mailcheck_toplevel_domains": ["dev"], "il8n_min_word_length_err_msg": "Please enter at least {0} words.", "il8n_min_character_length_err_msg": "Please enter at least {0} characters.", "plugin_url": "http:\/\/localhost\/wp-content\/plugins\/everest-forms\/", "i18n_messages_phone": "Please enter a valid phone number.", "i18n_field_rating_greater_than_max_value_error": "Please enter in a value less than 100." };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms.min.js?ver=3.0.0.1"
+        id="everest-forms-js"></script>
+    <script type="text/javascript" id="everest-forms-survey-polls-quiz-script-js-extra">
+        /* <![CDATA[ */
+        var everest_forms_survey_polls_quiz_script_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "ajax_nonce": "c29d57132a", "form_id": "" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms-survey-polls-quiz.min.js?ver=3.0.0.1"
+        id="everest-forms-survey-polls-quiz-script-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/mailcheck/mailcheck.min.js?ver=1.1.2"
+        id="mailcheck-js"></script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/dropzone/dropzone.min.js?ver=5.5.0"
+        id="dropzone-js"></script>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/underscore.min.js?ver=1.13.4"
+        id="underscore-js"></script>
+    <script type="text/javascript" id="wp-util-js-extra">
+        /* <![CDATA[ */
+        var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://localhost/wp-includes/js/wp-util.min.js?ver=6.5.5"
+        id="wp-util-js"></script>
+    <script type="text/javascript" id="everest-forms-file-upload-js-extra">
+        /* <![CDATA[ */
+        var everest_forms_upload_parms = { "url": "http:\/\/localhost\/wp-admin\/admin-ajax.php", "errors": { "file_not_uploaded": "This file was not uploaded.", "file_limit": "File limit has been reached ({fileLimit}).", "file_extension": false, "file_size": "File exceeds max size allowed.", "post_max_size": "File exceeds the upload limit allowed (64 MB)." }, "max_timeout": "30000", "loading_message": "Do not submit the form until the upload process is finished" };
+        var everest_forms_upload_parms = { "url": "http:\/\/localhost\/wp-admin\/admin-ajax.php", "errors": { "file_not_uploaded": "This file was not uploaded.", "file_limit": "File limit has been reached ({fileLimit}).", "file_extension": false, "file_size": "File exceeds max size allowed.", "post_max_size": "File exceeds the upload limit allowed (64 MB)." }, "max_timeout": "30000", "loading_message": "Do not submit the form until the upload process is finished" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms-file-upload.min.js?ver=3.0.0.1"
+        id="everest-forms-file-upload-js"></script>
+    <script type="text/javascript" id="everest-forms-ajax-submission-js-extra">
+        /* <![CDATA[ */
+        var everest_forms_ajax_submission_params = { "ajax_url": "http:\/\/localhost\/wp-admin\/admin-ajax.php", "evf_ajax_submission": "0ffc07eff7", "submit": "Submit", "error": "Something went wrong while making an AJAX submission", "required": "This field is required.", "pdf_download": "Click here to download your pdf submission" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="http://localhost/wp-content/plugins/everest-forms/assets/js/frontend/ajax-submission.min.js?ver=3.0.0.1"
+        id="everest-forms-ajax-submission-js"></script>
+
+</body>
+
+</html>
