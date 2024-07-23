@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world!</title>
+    <!-- <script type="text/javascript" src=".js"></script> -->
+
+</head>
+
+<body>
+    <script>
+        // condizione if
+        var numeroInserito = 100;
+        if (numeroInserito >= 0) {
+            console.log("La variabile inserita è positiva");
+        }
+
+        // condizione if + else
+        var numeroInserito = -100;
+        if (numeroInserito >= 0) {
+            console.log("La variabile inserita è positiva");
+            numeroInserito = numeroInserito + 100;
+        } else {
+            console.log("La variabile inserita è negativa");
+            numeroInserito = 0;
+        }
+
+        // condizione if + else con "true" e "false"
+        var maschioFemmina = true; // se "true" maschio e se "false" femmina
+        if (maschioFemmina) {
+            console.log("Maschio");
+            console.log("Dammi la data di nascita:");
+        } else {
+            console.log("Femmina");
+        }
+        // numeroInserito >=0 and numeroInserito diverso da zero
+        // aggiunta di operatori relazionali
+        numeroInserito = 3;
+        if (numeroInserito > 0 && numeroInserito != 3) {
+            console.log("Valore verificato");
+        } else {
+            console.log("Valore non verificato");
+        }
+
+        numeroInserito = 5;
+        if (numeroInserito == 3 || numeroInserito == 4) {
+            console.log("Valore corretto");
+        } else {
+            console.log("Valore NON corretto");
+        }
+
+        // scomporre operatore relazionale || per facilitarne la lettura
+        if (numeroInserito > 0) {
+            if (numeroInserito != 3) {
+            } else {
+            }
+        }
+        else {
+        }
+
+        var femmina = true;
+        if (!femmina) {
+            console.log("Sono una femmina");
+        } else {
+            console.log("Sono un maschio");
+        }
+
+        // condizione booleana
+        var numeroPositivo = false;
+        if (numeroPositivo == true) {
+        } else {
+        }
+
+        var variabileScript01 = 100;
+        console.log(variabileScript01);
+    </script>
+
+    <script>
+        // variabileScript01 = 200;
+        console.log(variabileScript01);
+
+        {
+            var variabileBlocco = 100;
+            console.log("valore della variabile dentro al blocco");
+            console.log(variabileBlocco);
+            let variabileBloccoLET = 200;
+            consoloe.log("Valore della variabile LET dentro il blocco");
+            console.log(variabileBloccoLET);
+        }
+
+        console.log("Valore della variabile fupri dal blocco");
+        console.log(variabileBlocco);
+        console.log("Valore della variabile LET fuori dal blocco");
+        console.log(variabileBloccoLET);
+
+    </script>
+</body>
+
+</html>
