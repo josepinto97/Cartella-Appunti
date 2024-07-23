@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
 
         //ESEMPIO
@@ -18,27 +20,50 @@
             contatore++;
         } while (contatore < 10); */
 
-        //ESERCIZIO
+        //ESERCIZIO 1
 
-        let x = -3;
-        let y = -2;
-        let risultato = 0;
+        /*         let x = -3;
+                let y = -2;
+                let risultato = 0;
+                let contatore = 0;
+        
+                while (y != contatore && x!= 0) {
+                    if (y < 0) {
+                        risultato = risultato - x;
+                        contatore--;
+                    }else{
+                        risultato = risultato + x;
+                        contatore++;
+                    }
+                }
+        
+                console.log(x, "*", y, "=", risultato); */
+
+        //ESERCIZIO 2
+
+        let x = 0;
+        let y = 20;
         let contatore = 0;
+        let somma = 0;
 
-        while (y != contatore) {
-            if (y < 0) {
-                risultato = risultato - x;
-                contatore--;
-            }else{
-                risultato = risultato + x;
+        console.log("Primi", y, "numeri divisibili per 2:");
+
+        while (x <= y) {
+            if (!(x % 2)) {
+                console.log(x);
                 contatore++;
+                somma = somma + x;
+                if (!(x % 10)) {
+                    console.log("Il numero", x, "è divisibile per 10")
+                }
             }
+            x++;
         }
 
-        console.log(x, "*", y, "=", risultato);
-
+        console.log("Numeri stampati:", contatore, "media:", somma / contatore);
 
     </script>
 
 </body>
+
 </html>
