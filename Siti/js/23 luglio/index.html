@@ -42,25 +42,35 @@
         //ESERCIZIO 2
 
         let x = 0;
-        let y = 20;
+        let y = 67;
         let contatore = 0;
         let somma = 0;
+        let contatore2 = "Numeri stampati che sono divisibili per 10: ";
 
-        console.log("Primi", y, "numeri divisibili per 2:");
+        console.log("Primi", y, "numeri divisibili per 2: ");
 
         while (x <= y) {
             if (!(x % 2)) {
-                console.log(x);
+                if (!(x % 10) && x != 0) {
+                    console.log(x.toString() + " " + "è divisibile per 10");
+                    if (x != 10) {
+                        contatore2 = contatore2 + ", " + x.toString();
+                    } else {
+                        contatore2 = contatore2 + x.toString();
+                    }
+
+                } else {
+                    console.log(x);
+                }
                 contatore++;
                 somma = somma + x;
-                if (!(x % 10)) {
-                    console.log("Il numero", x, "è divisibile per 10")
-                }
             }
             x++;
         }
 
-        console.log("Numeri stampati:", contatore, "media:", somma / contatore);
+        console.log("Numeri stampati:", contatore.toString(), "Media:", (somma / contatore).toString());
+
+        console.log(contatore2);
 
     </script>
 
