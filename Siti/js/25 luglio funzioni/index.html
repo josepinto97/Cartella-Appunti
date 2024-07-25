@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let x = 10;
+        let y = 0;
+        let risultato = 0;
+
+        function somma(numero1, numero2) {
+            console.log("Valore primo numero: " + numero1.toString()
+            );
+            console.log("Valore secondo numero: " + numero2.toString());
+            return numero1 + numero2;
+        }
+
+        function sottrazione(numero1, numero2) {
+            console.log("Valore primo numero: " + numero1.toString()
+            );
+            console.log("Valore secondo numero: " + numero2.toString());
+            return numero1 - numero2;
+        }
+
+        function moltiplicazione(numero1, numero2) {
+            console.log("Valore primo numero: " + numero1.toString()
+            );
+            console.log("Valore secondo numero: " + numero2.toString());
+            return numero1 * numero2;
+        }
+
+        function divisione(numero1, numero2) {
+            console.log("Valore primo numero: " + numero1.toString()
+            );
+            console.log("Valore secondo numero: " + numero2.toString());
+
+            if (numero2 == 0) {
+                return "impossibile";
+            } else {
+                return numero1 / numero2;
+            }
+
+        }
+
+        risultato = somma(x, y);
+
+        console.log("Somma: " + risultato.toString());
+
+        x = 10;
+        y = 5;
+
+        risultato = divisione(x, y);
+
+        console.log("Divisione: " + risultato.toString());
+
+    </script>
+
+</body>
+
+</html>
