@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let x = 50;
+        let controllo = 1;
+        let risultato = '';
+
+        while (controllo <= x) {
+            if (controllo % 10) {
+                risultato = risultato + (controllo).toString() + ',';
+            } else {
+                risultato = risultato + (controllo).toString();
+            }
+            if (!(controllo % 10)) {
+                console.log(risultato);
+                risultato = '';
+            }
+            controllo++;
+        }   
+
+    </script>
+
+</body>
+
+</html>
