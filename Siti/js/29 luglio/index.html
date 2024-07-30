@@ -12,21 +12,21 @@
     <script>
 
         let x = 50;
-        let controllo = 1;
+        let controllo = 0;
         let risultato = '';
 
-        while (controllo <= x) {
+        while (controllo++ <= x) {
+
             if (controllo % 10) {
-                risultato = risultato + (controllo).toString() + ',';
+                risultato += (controllo).toString() + ',';
             } else {
-                risultato = risultato + (controllo).toString();
+                risultato += (controllo).toString();
             }
             if (!(controllo % 10)) {
                 console.log(risultato);
                 risultato = '';
             }
-            controllo++;
-        }   
+        }
 
     </script>
 
