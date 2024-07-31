@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let lista = [1, 2, 3, 4, 5, 6, 312, 54, 67, 58, 72, 54];
+        let lista2 = ['Jose', 'Stefano', 'Alberto'];
+
+        for (let i = 0; i < lista2.length; i++) {
+            lista[lista.length] = lista2[i];
+        }
+
+        for (let i = 0; i < lista.length; i++) {
+            console.log(lista[i]);
+        }
+
+        for (let i = lista.length - 1; i >= 0; i--) {
+            console.log(lista[i]);
+        }
+
+    </script>
+
+</body>
+
+</html>
