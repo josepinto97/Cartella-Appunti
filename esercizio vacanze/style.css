@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    background-color: #e5d5bc;
+}
+
+header .logo {
+    padding: 1%;
+}
+
+header li {
+    list-style-type: none;
+    display: block;
+}
+
+header a {
+    text-decoration: none;
+    color: #474747;
+    padding: 3px 5px;
+}
+
+header li a:hover {
+    color: #e5d5bc;
+    background-color: #474747;
+    border-radius: 30px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 4%;
+    padding: 1%;
+    width: 70%;
+}
+
+/* MAIN */
+
+h1 {
+    font-size: 3rem;
+    color: #a76a4b;
+}
+
+main h3 {
+    margin: 3% 0;
+    font-size: 1.7rem;
+    border-top: 3px solid #a76a4b;
+    padding-top: 30px;
+    color: #474747;
+    display: inline-block;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #474747;
+}
+
+main a{
+    font-size: 1.2rem;
+    padding: 3px 5px;
+}
+
+main .card1 {
+    background-color: #e5d5bc;
+    text-align: center;
+    padding: 3% 30% 0 30%;
+    height: 70vh;
+}
+
+main .card1 p{
+    margin: 0 0 5% 0;
+}
+
+main .pulsanti {
+    justify-content: center;
+    display: flex;
+    gap: 20%;
+}
+
+main .pulsanteMarrone a{
+    color: #a76a4b;
+    text-decoration: none;
+}
+
+main .pulsanteMarrone a:hover{
+    background-color: #a76a4b;
+    color: #e5d5bc;
+    border-radius: 30px;
+}
