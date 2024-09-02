@@ -13,7 +13,7 @@ function init(params) {
     header += '<nav></nav>';
     header += '</header>';
     mainContent += '<main>';
-    mainContent += '<div class="main-content">';
+    mainContent += '<div id="main-content">';
     //mainContent += creaColonna(numeroColonne);
     mainContent += '</div>';
     mainContent += '</main>';
@@ -21,7 +21,9 @@ function init(params) {
     body = header + mainContent + footer;
     document.getElementById("id-body").innerHTML = body;
 
-    document.getElementById("main-content").innerHTML = creaColonna(numeroColonne);
+    //CARICO IN UN SECONDO MOMENTO DOPO IL CARICAMENTO DEL BODY
+
+    document.getElementById("main-content").innerHTML = creaColonna(numeroColonne);        
 
 
 }
