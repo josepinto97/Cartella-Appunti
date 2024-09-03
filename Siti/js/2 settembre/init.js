@@ -67,7 +67,7 @@ function creaColonna(numero_colonne, posizione) {
 
     let colonne = '';
 
-    if (posizone === "main") {
+    if (posizione === "main") {
         for (let i = 0; i < numero_colonne; i++) {
             if ((i + 1) < 10) {
                 colonne += '<div id="MainCard-0' + (i + 1).toString() + '">colonna-0' + (i + 1).toString() + '</div>';
@@ -75,7 +75,7 @@ function creaColonna(numero_colonne, posizione) {
                 colonne += '<div id="MainCard-' + (i + 1).toString() + '">colonna-' + (i + 1).toString() + '</div>';
             }
         }
-    }else{
+    } else {
         for (let i = 0; i < numero_colonne; i++) {
             if ((i + 1) < 10) {
                 colonne += '<div id="FooterCard-0' + (i + 1).toString() + '">colonna-0' + (i + 1).toString() + '</div>';
@@ -97,27 +97,37 @@ function getFormData() {
     let numeroColonneMain = document.getElementById("numeroColonneMain").value;
     let numeroColonneFooter = document.getElementById("numeroColonneFooter").value;
 
-    //CARICO IN UN SECONDO MOMENTO DOPO IL CARICAMENTO DEL BODY
+    //CARICO IN UN SECONDO MOMENTO DOPO IL CARICAMENTO DEL BODY LE COLONNE
 
-    document.getElementById("main-content").innerHTML = creaColonna(numeroColonneMain, main);
-    document.getElementById("footer-content").innerHTML = creaColonna(numeroColonneFooter, footer);
+    document.getElementById("main-content").innerHTML = creaColonna(numeroColonneMain, "main");
+    document.getElementById("footer-content").innerHTML = creaColonna(numeroColonneFooter, "footer");
 
     //STYLE CARD MAIN-CONTENT
 
-    for (let i = 0; i < numeroColonneMain || i < numeroColonneFooter; i++) {
+    for (let i = 0; i < numeroColonneMain; i++) {
         let idAttualeMain;
-        let idAttualeFooter;
         if (i < 9) {
-            console.log(idAttuale);
-            idAttualeMain = "card-0" + (i + 1).toString();
-            idAttualefooter = "card-0" + (i + 1).toString();
+            idAttualeMain = "MainCard-0" + (i + 1).toString();
         } else {
             console.log("ciao");
-            idAttualeMain = "card-" + (i + 1).toString();
-            idAttualeFooter = "card-" + (i + 1).toString();
+            idAttualeMain = "MainCard-" + (i + 1).toString();
         }
-        let card = document.getElementById(idAttuale);
-        card.style.backgroundColor = "aqua";
-        card.style.color = "red";
+        let cardMain = document.getElementById(idAttualeMain);
+        cardMain.style.backgroundColor = "aqua";
     }
+
+
+    //STYLE CARD FOOTER-CONTENT
+
+    for (let i = 0; i < numeroColonneFooter; i++) {
+        let idAttualeFooter;
+        if (i < 9) {
+            idAttualeFooter = "FooterCard-0" + (i + 1).toString();
+        } else {
+            idAttualeFooter = "FooterCard-" + (i + 1).toString();
+        }
+        let cardFooter = document.getElementById(idAttualeFooter);
+        cardFooter.style.backgroundColor = "orange";
+    }
+
 }
