@@ -106,7 +106,7 @@ function getFormData() {
 
     for (let i = 0; i < numeroColonneMain; i++) {
         let idAttualeMain;
-        if (i < 9) {
+        if ((i+1) < 10) {
             idAttualeMain = "MainCard-0" + (i + 1).toString();
         } else {
             console.log("ciao");
@@ -121,7 +121,7 @@ function getFormData() {
 
     for (let i = 0; i < numeroColonneFooter; i++) {
         let idAttualeFooter;
-        if (i < 9) {
+        if ((i+1) < 10) {
             idAttualeFooter = "FooterCard-0" + (i + 1).toString();
         } else {
             idAttualeFooter = "FooterCard-" + (i + 1).toString();

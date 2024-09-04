@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosello di Immagini</title>
+    <style>
+        /* Stile per il contenitore del carosello */
+        #carousel {
+            width: 300px; /* Larghezza del contenitore */
+            overflow: hidden; /* Nasconde le immagini che escono fuori */
+            border: 2px solid #ccc;
+        }
+
+        /* Stile per il contenitore interno che contiene tutte le immagini */
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* Animazione */
+        }
+
+        /* Stile per ciascuna immagine */
+        .carousel-images img {
+            width: 100px; /* Larghezza di ciascuna immagine (300px / 3 immagini) */
+            height: 100px; /* Altezza di ciascuna immagine */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="carousel">
+        <div class="carousel-images">
+            <img src="Foto/billy.jpeg" alt="Immagine 1">
+            <img src="Foto/la-sqala-casablanca.jpeg" alt="Immagine 2">
+            <img src="Foto/marocco-chefcheouen.jpeg" alt="Immagine 3">
+            <img src="Foto/museo-jago-pieta.jpeg" alt="Immagine 4">
+            <img src="Foto/rabat-marocco.jpeg" alt="Immagine 5">
+            <img src="Foto/museo-madre-napoli.jpeg" alt="Immagine 6">
+        </div>
+    </div>
+
+    <script>
+        var currentIndex = 0; // Indice iniziale
+        var imagesToShow = 5; // Numero di immagini da mostrare contemporaneamente
+        var totalImages = document.querySelectorAll('.carousel-images img').length; // Numero totale di immagini
+        var carouselWidth = document.getElementById('carousel').offsetWidth; // Larghezza del carosello
+
+        function showNextImages() {
+            currentIndex = (currentIndex + 1) % (totalImages - imagesToShow + 1); // Calcola il prossimo indice
+            var offset = -currentIndex * (carouselWidth / imagesToShow); // Calcola l'offset in pixel
+            document.querySelector('.carousel-images').style.transform = `translateX(${offset}px)`; // Applica lo spostamento
+        }
+
+        // Esegue lo scorrimento delle immagini ogni 2 secondi
+        setInterval(showNextImages, 2000);
+    </script>
+
+</body>
+</html>
