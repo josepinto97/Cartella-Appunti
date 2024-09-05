@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ripasso.css">
+    <script src="ripasso.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <form action="" onsubmit="event.preventDefault();">
+            <label for="">Inserisci numero di pulsanti per generare immagini</label>
+            <input id="numero_colonne" onsubmit="generaBottoni()" type="number" max="7" min="1" placeholder="Max value 7">
+            <button onclick="generaBottoni()" type="button">INVIA</button>
+        </form>
+        <div>
+            <nav>
+                <ul id="menu_dinamico" class="menu_dinamico"></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="immagine_dinamica" class="immagine_dinamica"></div>
+    </main>
+
+    <footer>
+        <p>Via Don Giuseppe Bedetti, 26, 40129 Bologna BO</p>
+        <img src="Foto/billy.jpeg" height="200px" width="auto" alt="">
+    </footer>
+
+</body>
+
+</html>

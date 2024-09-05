@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     color: white;
@@ -8,22 +8,22 @@
 
 /* HEADER */
 
-header form{
+header form {
     margin: 30px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-evenly;
 }
 
-header li{
+header li {
     list-style: none;
 }
 
-header button{
+header button {
     font-size: 30px;
     color: black;
     background-color: white;
@@ -33,12 +33,13 @@ header button{
 
 /* MAIN */
 
-main .imamgine-dinamica img{
-    height: 30vh;
-    width: auto;
+main .imamgine-dinamica {
+    height: 200px;
+    width: 300px;
+    border: solid black;
 }
 
-main{
+main {
     padding-top: 55px;
     display: flex;
     justify-content: center;
@@ -47,14 +48,14 @@ main{
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
 }
 
-footer img{
+footer img {
     height: 150px;
     width: auto;
 }
