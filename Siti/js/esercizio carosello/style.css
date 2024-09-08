@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: lightcyan;
+    font-size: 26px;
+}
+
+/* HEADER */
+
+header .pulsanti-immagini{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .pulsanti-immagini button{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 10px
+}
+
+header .pulsanti-immagini button:hover{
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+/* MAIN */
+
+main .contenitore-immagini{
+    display: flex;
+/*     flex-wrap: wrap; */
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+main .contenitore-immagini img{
+    height: 300px;
+    width: 500px;
+    margin: 30px;
+    border: solid 5px black;
+}
+
+/* FOOTER */
