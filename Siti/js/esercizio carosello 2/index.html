@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="srtyle.css">
     <script src="code.js"></script>
+<!--      <script src="code_no_globali.js"></script> -->
 </head>
+
 <body>
-    
+
     <header>
-        <button onclick="genera_immagine()">Carica Immagine</button>
-        <button onclick="inverti_immagini()">Inverti Immagini</button>
+        <div id="pulsante_rotazione_sinistra"><button onclick="inverti_immagini_sinistra(0,0)">Inverti Immagini a Sinistra</button></div>
+        <div id="pulsante_immagini"><button onclick="genera_immagine(0, true)">Carica Immagine</button></div>
+        <button onclick="inverti_immagini_destra()">Inverti Immagini a Destra</button>
     </header>
 
     <main>
@@ -23,4 +27,5 @@
     </footer>
 
 </body>
+
 </html>

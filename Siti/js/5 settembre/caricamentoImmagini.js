@@ -5,6 +5,8 @@ function init() {
     creaItemsMenu(numeroItemMenu, 'id-main-menu');
 
 }
+ 
+
 
 function creaItemsMenu(numeroItemMenu, idMenu) {
 
@@ -18,10 +20,17 @@ function creaItemsMenu(numeroItemMenu, idMenu) {
 
 }
 
+
+
 function caricaImmagine(indice) {
 
-    let immagine_attuale = ["isola", "sedie", "spiaggia"];
-    let immagine = '<img class="immagine" src="img/' + immagine_attuale[indice] + '.jpg" alt="Immagine">';
+    let immagini = [
+        {nome_file: 'isola', descrizione_immagine: 'descrizione 1'},
+        {nome_file: 'sedie', descrizione_immagine: 'descrizione 2'},
+        {nome_file: 'spiaggia', descrizione_immagine: 'descrizione 3'}
+    ];
+
+    let immagine = '<img class="immagine" src="img/' + immagini[indice].nome_file + '.jpg" alt="Immagine ' + immagini[indice].descrizione_immagine + '">';
 
     document.getElementById('id-immagine').innerHTML = immagine;
 

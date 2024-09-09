@@ -24,15 +24,15 @@ function genera_immagine() {
 
 
 
-function inverti_immagini() {
+function inverti_immagini_sinistra() {
 
 
+    //estraggo primo campo dell array
     let prima_immagine = array_immagini_attuali.shift();
     let contenuto_html = '';
 
+    //inserisco all ultimo posto dell array
     array_immagini_attuali.push(prima_immagine);
-
-    document.getElementById("contenitore_immagini").innerHTML = contenuto_html;
 
     for (let i = 0; i < contatore_immagini; i++) {
         contenuto_html += '<img src="immagini/' + array_immagini_attuali[i] + '.jpg" alt="">';
@@ -42,5 +42,24 @@ function inverti_immagini() {
 
 
 }
+/* setInterval(inverti_immagini_sinistra, 5000); */
 
-setInterval(inverti_immagini, 5000);
+
+
+function inverti_immagini_destra() {
+
+
+    let ultima_immagine = array_immagini_attuali.pop();
+    let contenuto_html = '';
+
+    array_immagini_attuali.unshift(ultima_immagine);
+
+    for (let i = 0; i < contatore_immagini; i++) {
+        contenuto_html += '<img src="immagini/' + array_immagini_attuali[i] + '.jpg" alt="">';
+    }
+
+    document.getElementById("contenitore_immagini").innerHTML = contenuto_html;
+
+
+
+}
