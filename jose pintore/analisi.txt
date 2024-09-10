@@ -1,0 +1,23 @@
+Documento di specifiche tecniche
+
+Procedo alla realizzazione di un sito web attenendomi al mokup fornito dal cliente. Il sito sarà progettato in modo responsive: sara garantita la corretta visualizzazione sugli schermi di dimensioni:
+    -telefoni cellulari: con una lunghezza compresa da 380px a 620px;
+    -tablet, pc: con una lunghezza compresa da 620px a 1920px;
+    -per le grandezze superiori e inferiori sara garantita una visualizzazione, non fedele al mokup usufruibile dagli utenti.
+
+
+Il sito deve essere cosi sviluppato:
+
+Parte 1:
+    -presenza di due pulasnti nell header della pagina, il primo alla pressione deve mostrare a schermo tre immagini nel main della pagina, con la comparsa nella parte aside di due pulasnti
+        i quali alla pressione devono o nascondere le immagini o mostrarle. L applicazione sara sviluppata in modo tale che il cliente possa decidere quante imagini mostrare a schermo, inserendo
+        in un apposito campo i nomi delle immagini che vuole inserire.
+
+Parte 2:
+    -il secondo pulsante nell' header deve mostrare a schermo, nel main della pagina, una tabella di colonne 4 e righe 6 piu uno per i nomi di esse. Alla generazione della tabella nella sezione
+    aside devono comparire due pulsanti i quali alla pressione devono riempire la tabella con i dati fortniti dal cliente, e il secondo pulsate deve svutare la tabella da questi dati.
+    La generazione della tabella sarà sviluppata in modo che il cliente possa gestire il numero di colonne e righe.
+    I campi della tabella saranno nominati con un ID, in caso al cliente serva modificare qualche cosa, saranno cosi composti: colonna-(inserire il numero della coonna)_riga-(inserire il numero della riga)
+    il numeramento delle caselle non tiene conto della prima riga in cui e presente la nominazione delle colonne.
+
+Nel footer della pagina sara presente l' indirzzo dell'azienda del cliente e i loghi social in suo possesso.

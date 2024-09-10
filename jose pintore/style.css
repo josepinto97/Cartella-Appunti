@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.20rem;
+}
+
+/* HEADER */
+
+header {
+    padding: 15px;
+    background-color: lightcyan;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header .pulsanti {
+    width: 100%;
+}
+
+header button {
+    margin: auto;
+    margin-left: 10%;
+    width: 200px;
+    padding: 20px;
+}
+
+header button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+main p {
+    background-color: white;
+    width: 100%;
+}
+
+main .visualizzazione-impostazioni {
+    height: 100%;
+    width: 300px;
+    background-color: lightcyan;
+    margin: auto;
+}
+
+main .visualizzazione-impostazioni button {
+    width: 80%;
+    margin: auto;
+    margin: 50% 20px;
+}
+
+main .contenuto-dinamico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    background-color: lightgrey;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+main .contenuto-dinamico .immagine {
+    display: block;
+}
+
+main .contenuto-dinamico img {
+    height: 12rem;
+    width: 18rem;
+    margin: 10px;
+}
+
+main .contenuto-dinamico .descrizione-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 20px;
+    padding: 15px;
+    background-color: lightcyan;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+footer .social img {
+    height: 30px;
+    width: 30px;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 620px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .contenuto-dinamico {
+        padding: 0;
+    }
+
+    main .contenuto-dinamico img {
+        margin: 20px 0;
+    }
+
+    main .visualizzazione-impostazioni button {
+        margin: 20px 20px;
+    }
+
+    footer .social{
+        margin: 30px 0;
+    }
+
+}
