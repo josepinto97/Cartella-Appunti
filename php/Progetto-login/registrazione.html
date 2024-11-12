@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="cont-form">
+        <form method="post" action="registrazione.php">
+            <div class="username">
+                <label for="username">Nome</label>
+                <input type="text" name="username" id="nome" required placeholder="nome">
+            </div>
+            <div class="password">
+                <label for="username">Cognome</label>
+                <input type="text" name="cognome" id="cognome" required placeholder="cognome">
+            </div>
+            <div class="password">
+                <label for="username">Indirizzo</label>
+                <input type="text" name="indirizzo" id="indirizzo" required placeholder="indirizzo">
+            </div>
+            <div class="password">
+                <label for="username">Email</label>
+                <input type="email" name="email" id="email" required placeholder="email">
+            </div>
+            <div class="username">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required placeholder="username">
+            </div>
+            <div class="password">
+                <label for="username">Password</label>
+                <input type="text" name="password" id="password" required placeholder="password min 8 chr" minlength="8">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <input class="pulsante" type="button" value="login" onclick="window.location.href='login.html'">
+    </div>
+
+</body>
+</html>
