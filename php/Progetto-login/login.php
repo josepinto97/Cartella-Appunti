@@ -7,9 +7,6 @@
 
     $conn = new mysqli($server_name, $server_database_name, $server_database_password, $server_database_username);    
     
-    if($conn->connect_error){
-        die('CONNESSIONE FALLITA:' . $conn->connect_error);
-    }
     
     $username = $_POST['username'];
     $password = $_POST['password'];
